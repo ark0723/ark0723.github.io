@@ -8,52 +8,52 @@ sidebar:
   education: True # set to False if you want education in main section instead of in sidebar
 
   # Profile information
-  name: Alan Doe
+  name: Ahla Ko
   tagline: Full Stack Developer
   avatar: profile.png #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
   # Sidebar links
-  email: example@email.com
-  phone: 012 345 6789
-  timezone: America/Cancun # Enter your timezone, e.g., America/Havana, Africa/Casablanca, America/North_Dakota/Center
-  citizenship:
-  website: https://example.com/ # Include the full website URL, including "http://" or "https://".
-  linkedin: alandoe
-  xing: alandoe
-  github: jekyll
-  telegram: # add your nickname without '@' sign
-  gitlab:
-  bitbucket:
-  bluesky: '@jekyllrb.bsky.social' # Specify your full Bluesky handle
-  twitter: '@jekyllrb'
-  stack-overflow: # Number/Username, e.g. 123456/alandoe
-  codewars:
-  goodreads: # Number-Username, e.g. 123456-alandoe
-  mastodon: # Please include your full Mastodon link here.
-  hackerrank: # Please provide your HackerRank username.
-  leetcode: # Please provide your LeetCode username.
+  email: ahlako@uark.edu
+  phone: 479 463 0914
+  timezone: America/Chicago # Enter your timezone, e.g., America/Havana, Africa/Casablanca, America/North_Dakota/Center
+  # citizenship:
+  # website: https:// # Include the full website URL, including "http://" or "https://".
+  # linkedin: alandoe
+  # xing: alandoe
+  github: ark0723
+  # telegram: # add your nickname without '@' sign
+  # gitlab:
+  # bitbucket:
+  # bluesky: '@jekyllrb.bsky.social' # Specify your full Bluesky handle
+  # twitter: '@jekyllrb'
+  # stack-overflow: # Number/Username, e.g. 123456/alandoe
+  # codewars:
+  # goodreads: # Number-Username, e.g. 123456-alandoe
+  # mastodon: # Please include your full Mastodon link here.
+  # hackerrank: # Please provide your HackerRank username.
+  # leetcode: # Please provide your LeetCode username.
   pdf: # Add a PDF link here if you want to include a PDF custom version in your resume.
 
   languages:
     title: Languages
     info:
-    - idiom: English
+    - idiom: Korean
       level: Native
 
-    - idiom: French
+    - idiom: English
       level: Professional
 
-    - idiom: Spanish
-      level: Professional
+    # - idiom: Spanish
+    #   level: Professional
 
   interests:
     title: Interests
     info:
-    - item: Climbing
+    - item: Yoga
       link:
 
 
-    - item: Snowboarding
+    - item: Walking
       link:
 
 
@@ -73,9 +73,9 @@ career-profile:
 education:
   title: Education
   info:
-  - degree: MSc in Computer Science
-    university: University of London
-    time: 2011 - 2012
+  - degree: Ph.D. in Industrial Engineering
+    university: University of Arkansas
+    time: 2018 - 2026
     details: |
       Describe your study here lorem ipsum dolor sit amet, consectetuer
       adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
@@ -84,8 +84,8 @@ education:
       pretium quis, sem.
         - Bullet point
         - Bullet point
-  - degree: BSc in Applied Mathematics
-    university: Bristol University
+  - degree: BSc in Chemistry Education 
+    university: Pusan National University
     time: 2007 - 2011
     details: |
       Describe your study here lorem ipsum dolor sit amet, consectetuer
@@ -97,24 +97,34 @@ education:
         - Bullet point
 
 experiences:
-  title: Experiences
+  title: Professional Experiences
   info:
-  - role: Lead Developer
-    time: 2015 - Present
-    company: Startup Hubs, San Francisco
+  - role: Graduate Research Assistant & Lead Developer
+    time: 2018 - Present
+    company: University of Arkansas
     details: |
-      Describe your role here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-      Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Donec quam felis, ultricies nec,
-      pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-      enim. Donec pede justo. Sed ut perspiciatis unde omnis iste natus
-      error sit voluptatem accusantium doloremque laudantium, totam rem
-      aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-      architecto beatae vitae dicta sunt explicabo.
-        - Bullet point
-        - Bullet point
-  - role: Senior Software Engineer
+      [Preventive Breast Cancer: Multi-Modal Prevention Strategy Optimization]
+      - Engineered a comprehensive decision-support framework to optimize multi-modal prevention strategies, including RRM, RRSO, Chemoprevention, and individualized surveillance.
+      - Achieved substantial clinical utility gains, delivering 2.33–4.33 QALY (Quality-Adjusted Life Years) improvements over current standardized clinical guidelines for high-risk cohorts (BRCA1, BRCA2, PALB2).
+      - Conducted Comparative Utility Analysis against extreme strategies (e.g., Earliest-RRM), demonstrating a 1.31–1.45 QALY advantage by identifying the optimal "Timing of Action" rather than uniform surgical intervention.
+      - Utilized SHAP (Explainable AI) to deconstruct the policy network's decision logic, quantifying the influence of age-specific menopausal status and MRI-elapsed time on high-stakes surgical recommendations.
+      - Validated model robustness through actuarial terminal value discounting and reward boundedness checks, ensuring the transition from MRI to Mammography (e.g., at age 55 for BRCA2) aligns with long-term survival maximization.
+
+      [Metastatic Breast Cancer (mBC): Strategic Treatment & Sensitivity Analytics]
+      - Formulated a multi-stage treatment decision process into a Markov Decision Process (MDP) to optimize quarterly therapy transitions and clinical stability.
+      - Developed a custom Gymnasium-based reinforcement learning environment to simulate trade-offs between treatment efficacy (OS/QALY) and patient-specific quality-of-life.
+      - Executed **Tornado Analysis (One-way Sensitivity Analysis)** to quantify the impact of clinical parameters and transition probabilities, identifying key drivers of optimal policy robustness.
+      - Optimized **Cessation Timing** strategies by identifying evidence-based thresholds for transitioning from active line-therapy to Best Supportive Care (BSC), balancing survival gains against treatment toxicity.
+      - Identified optimal "Tipping Points" to determine patient-centered thresholds for treatment escalation or de-escalation based on molecular subtypes (HR+, HER2+, TNBC).
+      - Automated complex sensitivity reporting and policy mapping, providing a scalable framework for rapid adaptation to evolving clinical evidence and patient preferences.
+
+      [Medical Form Digitization: AI-Driven Healthcare Automation]
+      - Engineered an end-to-end OCR pipeline (YOLOv11 + Residual CRNN) for medical record digitization, achieving 99.67% accuracy (EMA) and reducing manual processing costs by over 90%.
+      - Established a "Human-in-the-Loop" validation system with an optimal confidence threshold (-0.5721), automating 91% of total data entries while maintaining a clinical-grade error rate below 0.2%.
+      - Implemented deterministic audit trails and rule-based consistency checks to ensure HIPAA-compliant data governance and traceability.
+      
+      
+  - role: back-end developer
     time: 2014 - 2015
     company: Google, London
     details: |
@@ -276,7 +286,7 @@ skills:
   - name: HTML5 & CSS
     level: 95%
 
-  - name: Ruby on Rails
+  - name: Ruby on Rails  
     level: 85%
 
   - name: Sketch & Photoshop
