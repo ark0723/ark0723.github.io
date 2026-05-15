@@ -3,63 +3,32 @@
 #
 
 sidebar:
-  position: right # position of the sidebar : left or right
-  about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
-  education: True # set to False if you want education in main section instead of in sidebar
-
-  # Profile information
+  position: right
+  about: True
+  education: True
   name: Ahla Ko
-  tagline: Decision Analytics & ML Systems Engineer # Machine Learning & Operations Research Engineer
-  avatar: mypic.jpg #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
-
-  # Sidebar links
+  tagline: "Decision Analytics & ML Systems Engineer"
+  avatar: mypic.jpg
   email: ahlako@uark.edu
   phone: 479 463 0914
-  timezone: America/Chicago # Enter your timezone, e.g., America/Havana, Africa/Casablanca, America/North_Dakota/Center
-  # citizenship:
-  # website: https:// # Include the full website URL, including "http://" or "https://".
-  # linkedin: alandoe
-  # xing: alandoe
+  timezone: America/Chicago
   github: ark0723
-  # telegram: # add your nickname without '@' sign
-  # gitlab:
-  # bitbucket:
-  # bluesky: '@jekyllrb.bsky.social' # Specify your full Bluesky handle
-  # twitter: '@jekyllrb'
-  # stack-overflow: # Number/Username, e.g. 123456/alandoe
-  # codewars:
-  # goodreads: # Number-Username, e.g. 123456-alandoe
-  # mastodon: # Please include your full Mastodon link here.
-  # hackerrank: # Please provide your HackerRank username.
-  # leetcode: # Please provide your LeetCode username.
-  pdf: # Add a PDF link here if you want to include a PDF custom version in your resume.
-
   languages:
     title: Languages
     info:
-    - idiom: Korean
-      level: Native
-
-    - idiom: English
-      level: Professional
-
-    # - idiom: Spanish
-    #   level: Professional
-
+      - idiom: Korean
+        level: Native
+      - idiom: English
+        level: Professional
   interests:
     title: Interests
     info:
-    - item: Yoga
-      link:
-
-
-    - item: Walking
-      link:
-
-
-    - item: Cooking
-      link:
-
+      - item: Yoga
+        link:
+      - item: Walking
+        link:
+      - item: Cooking
+        link:
 
 career-profile:
   title: Career Profile
@@ -72,224 +41,111 @@ career-profile:
     operations across both cloud and local environments. Proven ability to deliver data-driven 
     solutions in healthcare and defense sectors that balance clinical utility with real-world 
     operational constraints.
+
 education:
   title: Education
   info:
-  - degree: Ph.D. in Industrial Engineering
-    university: University of Arkansas
-    time: 2018 - 2026
-    details: |
-      Dissertation: "From Data Digitization to Personalized Care: Deep Learning and Decision Analytics in Healthcare Systems"
+    - degree: Ph.D. in Industrial Engineering
+      university: University of Arkansas
+      time: 2018 - 2026
+      details: |
+        Dissertation: "From Data Digitization to Personalized Care: Deep Learning and Decision Analytics in Healthcare Systems"
         - Designed an automated OCR pipeline (YOLO/CRNN) and MDP-based treatment optimization models for complex clinical data.
         - Applied Deep Reinforcement Learning (PPO) and Computer Vision to enhance long-term patient outcomes and operational efficiency.
         - Integrated statistical sensitivity analysis and explainable AI (SHAP) to improve the interpretability of decision-support frameworks.
-  - degree: BSc in Chemistry Education 
-    university: Pusan National University
-    time: 2007 - 2011
-    details: |
-      - Completed a curriculum focused on analytical chemistry and quantitative scientific methodologies.
-      - Developed fundamental skills in experimental design, data collection, and laboratory management.
-      - Built communication skills to present complex scientific concepts to diverse audiences.
-      
+    - degree: BSc in Chemistry Education 
+      university: Pusan National University
+      time: 2007 - 2011
+      details: |
+        - Completed a curriculum focused on analytical chemistry and quantitative scientific methodologies.
+        - Developed fundamental skills in experimental design, data collection, and laboratory management.
+        - Built communication skills to present complex scientific concepts to diverse audiences.
+
 experiences:
   title: Professional Experiences
   info:
-  - role: Graduate Research Assistant & Lead Developer
-    time: 2018 - Present
-    company: University of Arkansas
-    details: |
-      [Preventive Breast Cancer: Multi-Modal Prevention Strategy Optimization]
-      - Engineered a comprehensive decision-support framework to optimize multi-modal prevention strategies, including RRM, RRSO, Chemoprevention, and individualized surveillance.
-      - Achieved substantial clinical utility gains, delivering 2.33–4.33 QALY (Quality-Adjusted Life Years) improvements over current standardized clinical guidelines for high-risk cohorts (BRCA1, BRCA2, PALB2).
-      - Conducted Comparative Utility Analysis against extreme strategies (e.g., Earliest-RRM), demonstrating a 1.31–1.45 QALY advantage by identifying the optimal "Timing of Action" rather than uniform surgical intervention.
-      - Utilized SHAP (Explainable AI) to deconstruct the policy network's decision logic, quantifying the influence of age-specific menopausal status and MRI-elapsed time on high-stakes surgical recommendations.
-      - Validated model robustness through actuarial terminal value discounting and reward boundedness checks, ensuring the transition from MRI to Mammography (e.g., at age 55 for BRCA2) aligns with long-term survival maximization.
+    - role: Graduate Research Assistant & Lead Developer
+      time: 2018 - Present
+      company: University of Arkansas
+      details: |
+        [Preventive Breast Cancer: Multi-Modal Prevention Strategy Optimization]
+        - Engineered a comprehensive decision-support framework to optimize multi-modal prevention strategies.
+        - Achieved substantial clinical utility gains (2.33–4.33 QALY improvements).
+        - Utilized SHAP (Explainable AI) to deconstruct policy network decision logic.
+        [Metastatic Breast Cancer (mBC): Strategic Treatment & Sensitivity Analytics]
+        - Formulated a multi-stage treatment decision process into a Markov Decision Process (MDP).
+        - Developed a custom Gymnasium-based reinforcement learning environment.
+        [Medical Form Digitization: AI-Driven Healthcare Automation]
+        - Engineered an end-to-end OCR pipeline (YOLOv11 + Residual CRNN) achieving 99.67% accuracy.
 
-      [Metastatic Breast Cancer (mBC): Strategic Treatment & Sensitivity Analytics]
-      - Formulated a multi-stage treatment decision process into a Markov Decision Process (MDP) to optimize quarterly therapy transitions and clinical stability.
-      - Developed a custom Gymnasium-based reinforcement learning environment to simulate trade-offs between treatment efficacy (OS/QALY) and patient-specific quality-of-life.
-      - Executed **Tornado Analysis (One-way Sensitivity Analysis)** to quantify the impact of clinical parameters and transition probabilities, identifying key drivers of optimal policy robustness.
-      - Optimized **Cessation Timing** strategies by identifying evidence-based thresholds for transitioning from active line-therapy to Best Supportive Care (BSC), balancing survival gains against treatment toxicity.
-      - Identified optimal "Tipping Points" to determine patient-centered thresholds for treatment escalation or de-escalation based on molecular subtypes (HR+, HER2+, TNBC).
-      - Automated complex sensitivity reporting and policy mapping, providing a scalable framework for rapid adaptation to evolving clinical evidence and patient preferences.
+    - role: Back-end Developer (Early Team)
+      time: 2021 - 2021
+      company: Heroworks, Busan (South Korea)
+      details: |
+        Joined as an early engineer for "DatAmenity," a domestic Revenue Management System (RMS).
+        - Developed core web application and JSON APIs for real-time pricing across 20+ OTA platforms.
+        - Architected relational database schemas (PostgreSQL + SQLAlchemy).
+        - Built interactive dashboards and automated reporting systems using Flask.
 
-      [Medical Form Digitization: AI-Driven Healthcare Automation]
-      - Engineered an end-to-end OCR pipeline (YOLOv11 + Residual CRNN) for medical record digitization, achieving 99.67% accuracy (EMA) and reducing manual processing costs by over 90%.
-      - Established a "Human-in-the-Loop" validation system with an optimal confidence threshold (-0.5721), automating 91% of total data entries while maintaining a clinical-grade error rate below 0.2%.
-      - Implemented deterministic audit trails and rule-based consistency checks to ensure HIPAA-compliant data governance and traceability.
-      
-      
-  - role: Back-end developer (early team)
-  time: 2021 - 2021
-  company: Heroworks, Busan(South Korea)
-  details: |
-      Joined as an early engineer for "DatAmenity," a domestic Revenue Management System (RMS) providing automated data-driven insights for the hospitality industry.
-      - Developed and optimized the core web application and JSON APIs, enabling hotel operators to monitor real-time pricing and inventory parity across 20+ major OTA platforms.
-      - Architected and managed relational database schemas (PostgreSQL + SQLAlchemy) to integrate large-scale pricing, room-type mapping, and competitive market data.
-      - Built interactive data visualization dashboards and automated reporting systems using Flask, transforming complex raw data into actionable revenue management signals for end-users.
-      - Implemented core business logic for rate comparison and market trend analysis, improving operational efficiency for hotel staff by centralizing cross-platform data.
-      - Collaborated with data collection teams to bridge the gap between backend storage and customer-facing analytics, ensuring high data accessibility and user-friendly interface.
+    - role: Research Analyst (Assistant Researcher)
+      time: 2016 - 2017
+      company: Korea Institute for Defense Analysis (KIDA), Seoul, South Korea
+      details: |
+        Applied mathematical optimization and quantitative analysis for national defense projects.
+        - Developed a location optimization model for military gunnery ranges.
+        - Synthesized and standardized multi-source defense data for ROK-U.S. cost-sharing negotiations.
+        - Orchestrated systematic collection and preprocessing of raw datasets.
 
-    
-  - role: Research Analyst (Assistant Researcher)
-    time: 2016 - 2017
-    company: Korea Institute for Defense Analysis (KIDA), Seoul, South Korea
-    details: |
-      Applied mathematical optimization and quantitative analysis to support strategic decision-making for national defense projects.
-      - Developed a location optimization model for military gunnery ranges, evaluating complex operational requirements against geographical and environmental constraints.
-      - Synthesized and standardized multi-source defense data to support ROK-U.S. cost-sharing negotiations, ensuring high data reliability for strategy formulation.
-      - Orchestrated the systematic collection and preprocessing of raw datasets to streamline research reporting and senior-level policy presentations.
-      - Liaised with Ministry of National Defense officials to coordinate data-driven project milestones and ensure cross-departmental information alignment.
+projects:
+  title: Projects
+  intro: >
+    Accomplished in bridging the gap between machine learning research and production-grade applications. 
+    Proven track record in implementing high-performance models (CV/RL) and architecting scalable 
+    data pipelines using FastAPI, Docker, and hybrid Cloud/Local environments.
+  assignments:
+    - title: Real-time Anomaly Detection & Service Migration
+      link: "https://github.com/ark0723/anomaly_detection"
+      tagline: "End-to-end ML workflow: Developed initial models on Azure Databricks and re-engineered the deployment pipeline to a local FastAPI environment."
+    - title: Neural Style Transfer - Research Paper Implementation
+      link: "https://github.com/ark0723/neural-style-transfer"
+      tagline: "Full reproduction of Gatys et al. (CVPR 2016) with VGG19-based pipeline; achieved 6x faster convergence with L-BFGS."
+    - title: AI-Powered Custom Apparel Platform (MVP)
+      link: "https://github.com/ark0723/aif_deployment"
+      tagline: "Architected a full-stack e-commerce prototype; integrated generative AI APIs into a microservices-based architecture."
+    - title: OpenPose for Medical Patient Analysis
+      link: "https://github.com/ark0723/MyProject/tree/master/OpenPose"
+      tagline: "Healthcare AI pipeline for clinical biomechanical assessment using deep learning-based skeletal pose estimation."
 
-# certifications:
-#   title: Certifications
-#   list:
-#   - name: CV Builder
-#     start: 2020
-#     end: 2021
-#     organization: Microsoft
-#     credentialid: 111-222
-#     credentialurl: www.google.com
-#     credentialname: Google
-#     details: |
-#       Details about cert. Lorem ipsum dolor sit amet, consectetur
-#       adipiscing elit.
-#       Nullam eget orci purus. Nullam ultrices neque nibh.
-#       Aenean fermentum, felis vulputate suscipit accumsan,
-#       sem enim bibendum augue, sed convallis arcu lacus at dui.
-#       Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
-#       Praesent felis nibh, eleifend id eleifend id, dictum id enim.
-#       Praesent venenatis erat non augue suscipit consectetur.
+publications:
+  title: Publications
+  intro: |
+    Selected research papers focusing on the intersection of 
+    Deep Learning, Decision Analytics, and Healthcare Systems.
+  papers:
+    - title: Deep Learning-Based Automated Recognition of Hand-Filled Forms for Medical Study Questionnaires in Moldova
+      link: "#"
+      authors: Ahla Ko, Yanjun Pan, Donald Catanzaro, Valeriu Crudu, Shengfan Zhang
+      conference: "IEEE Transactions on Industrial Informatics (Submitted)"
 
-#       Second paragraph. Sed eleifend enim ante, vitae efficitur purus
-#       fringilla vel. Ut euismod, sem sed vulputate venenatis,
-#       justo diam viverra velit, sed rhoncus leo leo eu justo.
-#       Suspendisse placerat risus ante, sed porta nisi blandit at.
-#   - name: Git learning
-#     start: 2019
-#     end:
-#     organization: Microsoft
-#     credentialid: 111-222
-#     credentialurl: www.github.com
-#     credentialname: Github
-#     details: |
-#       Older certification. Lorem ipsum dolor sit amet, consectetur
-#       adipiscing elit.
-#       Nullam eget orci purus. Nullam ultrices neque nibh.
-#       Aenean fermentum, felis vulputate suscipit accumsan,
-#       sem enim bibendum augue, sed convallis arcu lacus at dui.
-#       Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
-#       Praesent felis nibh, eleifend id eleifend id, dictum id enim.
-#       Praesent venenatis erat non augue suscipit consectetur.
+skills:
+  title: Skills & Proficiency
+  toolset:
+    - name: PyTorch & TensorFlow
+      level: 90%
+    - name: OpenCV
+      level: 80%
+    - name: Gymnasium
+      level: 85%
+    - name: Pandas & Numpy
+      level: 95%
+    - name: FastAPI & Django
+      level: 80%
+    - name: PostgreSQL & SQLAlchemy
+      level: 90%
+    - name: Docker
+      level: 85%
+    - name: AWS (EC2, S3)
+      level: 75%
 
-# projects:
-#   title: Projects
-#   intro: >
-#     Accomplished in bridging the gap between machine learning research and production-grade applications. 
-#     Proven track record in implementing high-performance models (CV/RL) and architecting scalable 
-#     data pipelines using FastAPI, Docker, and hybrid Cloud/Local environments. Experienced in 
-#     re-engineering systems for cost efficiency and integrating AI-driven features into functional 
-#     microservices, ensuring technical solutions translate into practical business value.
-#   assignments:
-#   - title: Real-time Anomaly Detection & Service Migration
-#     link: "https://github.com/ark0723/anomaly_detection"
-#     tagline: "End-to-end ML workflow: Developed initial models on Azure Databricks and re-engineered the deployment pipeline to a local FastAPI environment for cost efficiency."
-
-#   - title: Neural Style Transfer - Research Paper Implementation
-#     link: "https://github.com/ark0723/neural-style-transfer"
-#     tagline: "Full reproduction of Gatys et al. (CVPR 2016) with VGG19-based pipeline; achieved 6x faster convergence by implementing and benchmarking L-BFGS vs. Adam optimizers."
-
-#   - title: AI-Powered Custom Apparel Platform (MVP)
-#     link: "https://github.com/ark0723/aif_deployment"
-#     tagline: "Architected a full-stack e-commerce prototype; integrated generative AI APIs into a microservices-based architecture using Django, FastAPI, and AWS (EC2/S3)."
-
-#   - title: OpenPose for Medical Patient Analysis
-#     link: "https://github.com/ark0723/MyProject/tree/master/OpenPose"
-#     tagline: "Healthcare AI pipeline for clinical biomechanical assessment; implemented deep learning-based skeletal pose estimation for automated patient movement analysis and gait evaluation."
-
-# oss:
-#   title: OSS Contributions
-#   intro: >
-#     You can list your open source software contributions in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
-#   contributions:
-#   - title: Tempo
-#     link: "#"
-#     tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
-
-#   - title: Atom
-#     link: "#"
-#     tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
-
-#   - title: Delta
-#     link: "#"
-#     tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
-
-# publications:
-#   title: Publications
-#   intro: |
-#     Selected research papers focusing on the intersection of 
-#     Deep Learning, Decision Analytics, and Healthcare Systems.
-#   papers:
-#   - title: Deep Learning-Based Automated Recognition of Hand-Filled Forms for Medical Study Questionnaires in Moldova
-#     link: "#"
-#     authors: 	Ahla Ko, Yanjun Pan, Donald Catanzaro, Valeriu Crudu, Shengfan Zhang
-#     jounal: "IEEE Transactions on Industrial Informatics (Submitted)"
-
-#   # - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
-#   #   link: "#"
-#   #   authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
-#   #   conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
-
-#   # - title: A syntax directed compiler for Algol 60
-#   #   link: "#"
-#   #   authors: Edgar T. Irons
-#   #   conference: "Comm. ACM 4 (1961), 51–55"
-
-# recommendations:
-#   title: Recommendations
-#   list:
-#   - person: Yareli Perez
-#     email: perezyareli@example.com
-#     phone: 012 345 6789
-#     role: General Director at example.com
-#     recommendation: |
-#       Alan Doe is a super employee!
-#   - person: Lara Henderson
-#     email: larah@example.com
-#     phone: 012 345 6789
-#     role: General Director at example.com
-#     recommendation: |
-#       I would like to work with Alan Doe again!
-
-#       He is a great employee!
-
-# skills:
-#   title: Skills &amp; Proficiency
-
-#   toolset:
-#     - name: PyTorch & TensorFlow
-#       level: 90%
-
-#     - name: OpenCV
-#       level: 80%
-
-#     - name: Gymnasium
-#       level: 85%
-
-#     - name: Pandas & Numpy
-#       level: 95%
-
-#     - name: FastAPI & Django
-#       level: 80%
-
-#     - name: PostgreSQL & SQLAlchemy
-#       level: 90%
-
-#     - name: Docker
-#       level: 85%
-
-#     - name: AWS(EC2,S3)
-#       level: 75%
-
-# footer: >
-#   Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
+footer: >
+  Copyright &copy; 2026 Ahla Ko.
