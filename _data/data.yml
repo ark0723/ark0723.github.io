@@ -101,6 +101,7 @@ experiences:
         - Conducted Comparative Utility Analysis against extreme strategies (e.g., Earliest-RRM), demonstrating a 1.31–1.45 QALY advantage by identifying the optimal "Timing of Action" rather than uniform surgical intervention.
         - Utilized SHAP (Explainable AI) to deconstruct the policy network's decision logic, quantifying the influence of age-specific menopausal status and MRI-elapsed time on high-stakes surgical recommendations.
         - Validated model robustness through actuarial terminal value discounting and reward boundedness checks, ensuring the transition from MRI to Mammography (e.g., at age 55 for BRCA2) aligns with long-term survival maximization.
+      
       [Metastatic Breast Cancer (mBC): Strategic Treatment & Sensitivity Analytics]
         - Formulated a multi-stage treatment decision process into a Markov Decision Process (MDP) to optimize quarterly therapy transitions and clinical stability.
         - Developed a custom Gymnasium-based reinforcement learning environment to simulate trade-offs between treatment efficacy (OS/QALY) and patient-specific quality-of-life.
@@ -108,6 +109,7 @@ experiences:
         - Optimized **Cessation Timing** strategies by identifying evidence-based thresholds for transitioning from active line-therapy to Best Supportive Care (BSC), balancing survival gains against treatment toxicity.
         - Identified optimal "Tipping Points" using PPO (Proximal Policy Optimization) to determine patient-centered thresholds for treatment escalation or de-escalation based on molecular subtypes (HR+, HER2+, TNBC).
         - Automated complex sensitivity reporting and policy mapping, providing a scalable framework for rapid adaptation to evolving clinical evidence and patient preferences.
+      
       [Medical Form Digitization: AI-Driven Healthcare Automation]
         - Engineered an end-to-end OCR pipeline (YOLOv11 + Residual CRNN) for medical record digitization, achieving 99.67% accuracy (EMA) and reducing manual processing costs by over 90%.
         - Established a "Human-in-the-Loop" validation system with an optimal confidence threshold, automating 91% of total data entries while maintaining a clinical-grade error rate below 0.2%.
