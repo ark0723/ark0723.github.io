@@ -72,18 +72,18 @@ education:
   - degree: Ph.D. in Industrial Engineering
     university: University of Arkansas
     time: 2018 - 2026
-    details: |
-      Dissertation: "From Data Digitization to Personalized Care: Deep Learning and Decision Analytics in Healthcare Systems"
-        - Designed an automated OCR pipeline (YOLO/CRNN) and MDP-based treatment optimization models for complex clinical data.
-        - Applied Deep Reinforcement Learning (PPO) and Computer Vision to enhance long-term patient outcomes and operational efficiency.
-        - Integrated statistical sensitivity analysis and explainable AI (SHAP) to improve the interpretability of decision-support frameworks.
+    # details: |
+    #   Dissertation: "From Data Digitization to Personalized Care: Deep Learning and Decision Analytics in Healthcare Systems"
+    #     - Designed an automated OCR pipeline (YOLO/CRNN) and MDP-based treatment optimization models for complex clinical data.
+    #     - Applied Deep Reinforcement Learning (PPO) and Computer Vision to enhance long-term patient outcomes and operational efficiency.
+    #     - Integrated statistical sensitivity analysis and explainable AI (SHAP) to improve the interpretability of decision-support frameworks.
   - degree: BSc in Chemistry Education
     university: Pusan National University
     time: 2007 - 2011
-    details: |
-        - Completed a curriculum focused on analytical chemistry and quantitative scientific methodologies.
-        - Developed fundamental skills in experimental design, data collection, and laboratory management.
-        - Built communication skills to present complex scientific concepts to diverse audiences.
+    # details: |
+    #     - Completed a curriculum focused on analytical chemistry and quantitative scientific methodologies.
+    #     - Developed fundamental skills in experimental design, data collection, and laboratory management.
+    #     - Built communication skills to present complex scientific concepts to diverse audiences.
 
 experiences:
   title: Experiences
