@@ -141,155 +141,155 @@ experiences:
       - Orchestrated the systematic collection and preprocessing of raw datasets to streamline research reporting and senior-level policy presentations.
       - Liaised with Ministry of National Defense officials to coordinate data-driven project milestones and ensure cross-departmental information alignment.
 
-certifications:
-  title: Certifications
-  list:
-  - name: CV Builder
-    start: 2020
-    end: 2021
-    organization: Microsoft
-    credentialid: 111-222
-    credentialurl: www.google.com
-    credentialname: Google
-    details: |
-      Details about cert. Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit.
-      Nullam eget orci purus. Nullam ultrices neque nibh.
-      Aenean fermentum, felis vulputate suscipit accumsan,
-      sem enim bibendum augue, sed convallis arcu lacus at dui.
-      Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
-      Praesent felis nibh, eleifend id eleifend id, dictum id enim.
-      Praesent venenatis erat non augue suscipit consectetur.
+# certifications:
+#   title: Certifications
+#   list:
+#   - name: CV Builder
+#     start: 2020
+#     end: 2021
+#     organization: Microsoft
+#     credentialid: 111-222
+#     credentialurl: www.google.com
+#     credentialname: Google
+#     details: |
+#       Details about cert. Lorem ipsum dolor sit amet, consectetur
+#       adipiscing elit.
+#       Nullam eget orci purus. Nullam ultrices neque nibh.
+#       Aenean fermentum, felis vulputate suscipit accumsan,
+#       sem enim bibendum augue, sed convallis arcu lacus at dui.
+#       Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
+#       Praesent felis nibh, eleifend id eleifend id, dictum id enim.
+#       Praesent venenatis erat non augue suscipit consectetur.
 
-      Second paragraph. Sed eleifend enim ante, vitae efficitur purus
-      fringilla vel. Ut euismod, sem sed vulputate venenatis,
-      justo diam viverra velit, sed rhoncus leo leo eu justo.
-      Suspendisse placerat risus ante, sed porta nisi blandit at.
-  - name: Git learning
-    start: 2019
-    end:
-    organization: Microsoft
-    credentialid: 111-222
-    credentialurl: www.github.com
-    credentialname: Github
-    details: |
-      Older certification. Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit.
-      Nullam eget orci purus. Nullam ultrices neque nibh.
-      Aenean fermentum, felis vulputate suscipit accumsan,
-      sem enim bibendum augue, sed convallis arcu lacus at dui.
-      Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
-      Praesent felis nibh, eleifend id eleifend id, dictum id enim.
-      Praesent venenatis erat non augue suscipit consectetur.
+#       Second paragraph. Sed eleifend enim ante, vitae efficitur purus
+#       fringilla vel. Ut euismod, sem sed vulputate venenatis,
+#       justo diam viverra velit, sed rhoncus leo leo eu justo.
+#       Suspendisse placerat risus ante, sed porta nisi blandit at.
+#   - name: Git learning
+#     start: 2019
+#     end:
+#     organization: Microsoft
+#     credentialid: 111-222
+#     credentialurl: www.github.com
+#     credentialname: Github
+#     details: |
+#       Older certification. Lorem ipsum dolor sit amet, consectetur
+#       adipiscing elit.
+#       Nullam eget orci purus. Nullam ultrices neque nibh.
+#       Aenean fermentum, felis vulputate suscipit accumsan,
+#       sem enim bibendum augue, sed convallis arcu lacus at dui.
+#       Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
+#       Praesent felis nibh, eleifend id eleifend id, dictum id enim.
+#       Praesent venenatis erat non augue suscipit consectetur.
 
-projects:
-  title: Projects
-  intro: >
-    Accomplished in bridging the gap between machine learning research and production-grade applications. 
-    Proven track record in implementing high-performance models (CV/RL) and architecting scalable 
-    data pipelines using FastAPI, Docker, and hybrid Cloud/Local environments. Experienced in 
-    re-engineering systems for cost efficiency and integrating AI-driven features into functional 
-    microservices, ensuring technical solutions translate into practical business value.
-  assignments:
-  - title: Real-time Anomaly Detection & Service Migration
-    link: "https://github.com/ark0723/anomaly_detection"
-    tagline: "End-to-end ML workflow: Developed initial models on Azure Databricks and re-engineered the deployment pipeline to a local FastAPI environment for cost efficiency."
+# projects:
+#   title: Projects
+#   intro: >
+#     Accomplished in bridging the gap between machine learning research and production-grade applications. 
+#     Proven track record in implementing high-performance models (CV/RL) and architecting scalable 
+#     data pipelines using FastAPI, Docker, and hybrid Cloud/Local environments. Experienced in 
+#     re-engineering systems for cost efficiency and integrating AI-driven features into functional 
+#     microservices, ensuring technical solutions translate into practical business value.
+#   assignments:
+#   - title: Real-time Anomaly Detection & Service Migration
+#     link: "https://github.com/ark0723/anomaly_detection"
+#     tagline: "End-to-end ML workflow: Developed initial models on Azure Databricks and re-engineered the deployment pipeline to a local FastAPI environment for cost efficiency."
 
-  - title: Neural Style Transfer - Research Paper Implementation
-    link: "https://github.com/ark0723/neural-style-transfer"
-    tagline: "Full reproduction of Gatys et al. (CVPR 2016) with VGG19-based pipeline; achieved 6x faster convergence by implementing and benchmarking L-BFGS vs. Adam optimizers."
+#   - title: Neural Style Transfer - Research Paper Implementation
+#     link: "https://github.com/ark0723/neural-style-transfer"
+#     tagline: "Full reproduction of Gatys et al. (CVPR 2016) with VGG19-based pipeline; achieved 6x faster convergence by implementing and benchmarking L-BFGS vs. Adam optimizers."
 
-  - title: AI-Powered Custom Apparel Platform (MVP)
-    link: "https://github.com/ark0723/aif_deployment"
-    tagline: "Architected a full-stack e-commerce prototype; integrated generative AI APIs into a microservices-based architecture using Django, FastAPI, and AWS (EC2/S3)."
+#   - title: AI-Powered Custom Apparel Platform (MVP)
+#     link: "https://github.com/ark0723/aif_deployment"
+#     tagline: "Architected a full-stack e-commerce prototype; integrated generative AI APIs into a microservices-based architecture using Django, FastAPI, and AWS (EC2/S3)."
 
-  - title: OpenPose for Medical Patient Analysis
-    link: "https://github.com/ark0723/MyProject/tree/master/OpenPose"
-    tagline: "Healthcare AI pipeline for clinical biomechanical assessment; implemented deep learning-based skeletal pose estimation for automated patient movement analysis and gait evaluation."
+#   - title: OpenPose for Medical Patient Analysis
+#     link: "https://github.com/ark0723/MyProject/tree/master/OpenPose"
+#     tagline: "Healthcare AI pipeline for clinical biomechanical assessment; implemented deep learning-based skeletal pose estimation for automated patient movement analysis and gait evaluation."
 
-oss:
-  title: OSS Contributions
-  intro: >
-    You can list your open source software contributions in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
-  contributions:
-  - title: Tempo
-    link: "#"
-    tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
+# oss:
+#   title: OSS Contributions
+#   intro: >
+#     You can list your open source software contributions in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
+#   contributions:
+#   - title: Tempo
+#     link: "#"
+#     tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
 
-  - title: Atom
-    link: "#"
-    tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
+#   - title: Atom
+#     link: "#"
+#     tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
 
-  - title: Delta
-    link: "#"
-    tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
+#   - title: Delta
+#     link: "#"
+#     tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
 
-publications:
-  title: Publications
-  intro: |
-    Selected research papers focusing on the intersection of 
-    Deep Learning, Decision Analytics, and Healthcare Systems.
-  papers:
-  - title: Deep Learning-Based Automated Recognition of Hand-Filled Forms for Medical Study Questionnaires in Moldova
-    link: "#"
-    authors: 	Ahla Ko, Yanjun Pan, Donald Catanzaro, Valeriu Crudu, Shengfan Zhang
-    jounal: "IEEE Transactions on Industrial Informatics (Submitted)"
+# publications:
+#   title: Publications
+#   intro: |
+#     Selected research papers focusing on the intersection of 
+#     Deep Learning, Decision Analytics, and Healthcare Systems.
+#   papers:
+#   - title: Deep Learning-Based Automated Recognition of Hand-Filled Forms for Medical Study Questionnaires in Moldova
+#     link: "#"
+#     authors: 	Ahla Ko, Yanjun Pan, Donald Catanzaro, Valeriu Crudu, Shengfan Zhang
+#     jounal: "IEEE Transactions on Industrial Informatics (Submitted)"
 
-  # - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
-  #   link: "#"
-  #   authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
-  #   conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
+#   # - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
+#   #   link: "#"
+#   #   authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
+#   #   conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
 
-  # - title: A syntax directed compiler for Algol 60
-  #   link: "#"
-  #   authors: Edgar T. Irons
-  #   conference: "Comm. ACM 4 (1961), 51–55"
+#   # - title: A syntax directed compiler for Algol 60
+#   #   link: "#"
+#   #   authors: Edgar T. Irons
+#   #   conference: "Comm. ACM 4 (1961), 51–55"
 
-recommendations:
-  title: Recommendations
-  list:
-  - person: Yareli Perez
-    email: perezyareli@example.com
-    phone: 012 345 6789
-    role: General Director at example.com
-    recommendation: |
-      Alan Doe is a super employee!
-  - person: Lara Henderson
-    email: larah@example.com
-    phone: 012 345 6789
-    role: General Director at example.com
-    recommendation: |
-      I would like to work with Alan Doe again!
+# recommendations:
+#   title: Recommendations
+#   list:
+#   - person: Yareli Perez
+#     email: perezyareli@example.com
+#     phone: 012 345 6789
+#     role: General Director at example.com
+#     recommendation: |
+#       Alan Doe is a super employee!
+#   - person: Lara Henderson
+#     email: larah@example.com
+#     phone: 012 345 6789
+#     role: General Director at example.com
+#     recommendation: |
+#       I would like to work with Alan Doe again!
 
-      He is a great employee!
+#       He is a great employee!
 
-skills:
-  title: Skills &amp; Proficiency
+# skills:
+#   title: Skills &amp; Proficiency
 
-  toolset:
-    - name: PyTorch & TensorFlow
-      level: 90%
+#   toolset:
+#     - name: PyTorch & TensorFlow
+#       level: 90%
 
-    - name: OpenCV
-      level: 80%
+#     - name: OpenCV
+#       level: 80%
 
-    - name: Gymnasium
-      level: 85%
+#     - name: Gymnasium
+#       level: 85%
 
-    - name: Pandas & Numpy
-      level: 95%
+#     - name: Pandas & Numpy
+#       level: 95%
 
-    - name: FastAPI & Django
-      level: 80%
+#     - name: FastAPI & Django
+#       level: 80%
 
-    - name: PostgreSQL & SQLAlchemy
-      level: 90%
+#     - name: PostgreSQL & SQLAlchemy
+#       level: 90%
 
-    - name: Docker
-      level: 85%
+#     - name: Docker
+#       level: 85%
 
-    - name: AWS(EC2,S3)
-      level: 75%
+#     - name: AWS(EC2,S3)
+#       level: 75%
 
-footer: >
-  Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
+# footer: >
+#   Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
