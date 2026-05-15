@@ -175,11 +175,11 @@ projects:
 
   - title: Neural Style Transfer - Research Paper Implementation
     link: "https://github.com/ark0723/neural-style-transfer"
-    tagline: "Architected a full-stack e-commerce prototype; integrated generative AI APIs into a microservices-based architecture."
+    tagline: "Full reproduction of Gatys et al. (CVPR 2016) with VGG19-based pipeline; achieved 6x faster convergence with L-BFGS."
 
   - title: AI-Powered Custom Apparel Platform (MVP)
     link: "https://github.com/ark0723/aif_deployment"
-    tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
+    tagline: "Architected a full-stack e-commerce prototype; integrated generative AI APIs into a microservices-based architecture."
 
   - title: OpenPose for Medical Patient Analysis
     link: "https://github.com/ark0723/MyProject/tree/master/OpenPose"
