@@ -88,7 +88,7 @@ education:
 experiences:
   title: Experiences
   info:
-  - role: Graduate Research Assistant & Lead Developer
+  - role: Research Assistant & Lead Developer
     time: 2018 - Present
     company: University of Arkansas, Fayetteville
     details: |
@@ -106,7 +106,7 @@ experiences:
         - Engineered an end-to-end OCR pipeline (YOLOv11 + Residual CRNN) for medical record digitization, achieving 99.67% accuracy (EMA) and reducing manual processing costs by over 90%.
         - Established a "Human-in-the-Loop" validation system with an optimal confidence threshold, automating 91% of total data entries while maintaining a clinical-grade error rate below 0.2%.
         - Implemented deterministic audit trails and rule-based consistency checks to ensure HIPAA-compliant data governance and traceability.
-  - role: Back-end Developer (Early Team)
+  - role: Back-End Developer (Early Team)
     time: 2021 - 2021
     company: Heroworks, Busan (South Korea)
     details: |
@@ -114,7 +114,7 @@ experiences:
         - Developed core web application and JSON APIs for real-time pricing across 20+ OTA platforms.
         - Architected relational database schemas (PostgreSQL + SQLAlchemy).
         - Built interactive dashboards and automated reporting systems using Flask.
-  - role: Research Analyst (Assistant Researcher)
+  - role: Research Analyst
     time: 2016 - 2017
     company: Korea Institute for Defense Analysis (KIDA), Seoul (South Korea)
     details: |
