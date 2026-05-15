@@ -61,19 +61,15 @@ sidebar:
 career-profile:
   title: Career Profile
   summary: |
-    Data systems specialist integrating Deep Learning, Reinforcement Learning, and Operations 
-    Research to solve complex decision-making problems. Experienced in managing end-to-end 
-    ML lifecycles—from high-precision OCR and ETL to scalable model deployment. Adept at 
-    re-engineering research-based pipelines into cost-efficient, production-ready tools 
-    that balance clinical utility with real-world operational constraints.
+    Data scientist and ML engineer with hands-on experience across academic research and industry, building end-to-end ML pipelines from data digitization to production deployment. Proven track record of translating complex research (RL, MDP, Computer Vision) into operational tools that cut costs and drive measurable outcomes. Experienced across healthcare AI, revenue management, and defense analytics; comfortable owning full ML lifecycles independently.
 education:
   title: Education
   info:
   - degree: Ph.D. in Industrial Engineering
     university: University of Arkansas
     time: 2018 - 2026
-    # details: |
-    #   Dissertation: "From Data Digitization to Personalized Care: Deep Learning and Decision Analytics in Healthcare Systems"
+    details: |
+      Dissertation: "From Data Digitization to Personalized Care: Deep Learning and Decision Analytics in Healthcare Systems"
     #     - Designed an automated OCR pipeline (YOLO/CRNN) and MDP-based treatment optimization models for complex clinical data.
     #     - Applied Deep Reinforcement Learning (PPO) and Computer Vision to enhance long-term patient outcomes and operational efficiency.
     #     - Integrated statistical sensitivity analysis and explainable AI (SHAP) to improve the interpretability of decision-support frameworks.
@@ -93,24 +89,25 @@ experiences:
     company: University of Arkansas, Fayetteville
     details: |
       [Preventive Breast Cancer: Multi-Modal Prevention Strategy Optimization]
-        - Engineered an RL-based decision framework for high-risk cohorts, delivering 2.33–4.33 QALY improvements over current clinical guidelines.
-        - Identified optimal "Timing of Action" for surgical interventions via Comparative Utility Analysis, yielding a 1.45 QALY advantage over uniform strategies.
-        - Quantified policy logic using SHAP, deconstructing the influence of age-specific menopausal status and MRI-elapsed time on surgical recommendations.
+        - Built an RL-based decision support system (PPO) that personalizes cancer prevention strategies for high-risk patients (BRCA1/2, PALB2) by optimizing both intervention type (surgery vs. surveillance) and timing over a 45-year horizon, outperforming standard clinical guidelines by up to 4.33 quality-adjusted life years (QALYs).
+        - Identified strategic trade-offs between treatment aggressiveness and patient quality-of-life using Pareto analysis, revealing that guideline-based strategies underperform on both cancer prevention and patient utility when individual preferences are not accounted for.
+        - Delivered model interpretability using SHAP to surface key decision drivers (menopausal status, breast density, patient preferences), making model recommendations transparent and defensible for clinical decision-making.
       
       [Metastatic Breast Cancer (mBC): Strategic Treatment & Sensitivity Analytics]
-        - Formulated a multi-stage therapy transition process into an MDP and developed a custom Gymnasium-based RL environment to optimize OS and Quality-of-Life trade-offs.
+        - Built a custom RL simulation environment (OpenAI Gymnasium) modeling multi-stage treatment transitions for metastatic cancer patients, optimizing the balance between overall survival and quality of life.
         - Identified patient-centered thresholds for treatment escalation using Proximal Policy Optimization and executed Tornado Analysis to validate optimal policy robustness.
-        - Optimized "Cessation Timing" strategies for transitioning to Best Supportive Care (BSC), balancing evidence-based survival gains against treatment toxicity.
+        - Identified optimal timing to transition patients to supportive care, quantifying the survival-vs-toxicity trade-off to support evidence-based end-of-life treatment decisions..
       
       [Medical Form Digitization: AI-Driven Healthcare Automation]
         - Engineered an end-to-end OCR pipeline (YOLOv11 + Residual CRNN) for medical record digitization, achieving 99.67% accuracy (EMA) and reducing manual processing costs by over 90%.
         - Established a "Human-in-the-Loop" validation system with an optimal confidence threshold, automating 91% of total data entries while maintaining a clinical-grade error rate below 0.2%.
         - Implemented deterministic audit trails and rule-based consistency checks to ensure HIPAA-compliant data governance and traceability.
+        - See also: related publication under review (IEEE TII)
   - role: Back-End Developer (Early Team)
     time: 2021 - 2021
     company: Heroworks, Busan (South Korea)
     details: |
-      Joined as an early engineer for "DatAmenity," a domestic Revenue Management System (RMS).
+      Joined as an early engineer for "DatAmenity," a B2B Revenue Management System (RMS) for the hospitality industry (Seed-stage startup).
         - Developed core web application and JSON APIs for real-time pricing across 20+ OTA platforms.
         - Architected relational database schemas (PostgreSQL + SQLAlchemy).
         - Built interactive dashboards and automated reporting systems using Flask.
@@ -119,9 +116,8 @@ experiences:
     company: Korea Institute for Defense Analysis (KIDA), Seoul (South Korea)
     details: |
       Applied mathematical optimization and quantitative analysis for national defense projects.
-        - Developed a location optimization model for military gunnery ranges.
-        - Synthesized and standardized multi-source defense data for ROK-U.S. cost-sharing negotiations.
-        - Orchestrated systematic collection and preprocessing of raw datasets.
+        - Developed a facility location optimization model for military gunnery ranges, minimizing land costs while enforcing noise-impact constraints on residential areas..
+        - Synthesized and standardized multi-source defense data for ROK-U.S. cost-sharing negotiations, including collection and preprocessing of raw datasets.
 
 # certifications:
 #   title: Certifications
@@ -173,17 +169,17 @@ projects:
     link: "https://github.com/ark0723/anomaly_detection"
     tagline: "End-to-end ML workflow: Developed initial models on Azure Databricks and re-engineered the deployment pipeline to a local FastAPI environment."
 
-  - title: Neural Style Transfer - Research Paper Implementation
-    link: "https://github.com/ark0723/neural-style-transfer"
-    tagline: "Full reproduction of Gatys et al. (CVPR 2016) with VGG19-based pipeline; achieved 6x faster convergence with L-BFGS."
-
   - title: AI-Powered Custom Apparel Platform (MVP)
     link: "https://github.com/ark0723/aif_deployment"
-    tagline: "Architected a full-stack e-commerce prototype; integrated generative AI APIs into a microservices-based architecture."
+    tagline: "Built the backend and AI integration layer for an e-commerce MVP; integrated generative AI APIs into a microservices-based architecture."
 
   - title: OpenPose for Medical Patient Analysis
     link: "https://github.com/ark0723/MyProject/tree/master/OpenPose"
-    tagline: "Healthcare AI pipeline for clinical biomechanical assessment using deep learning-based skeletal pose estimation."
+    tagline: "Applied OpenPose to extract patient skeletal keypoints for clinical movement analysis, enabling quantitative assessment of physical rehabilitation progress."
+
+  - title: Binance MCP Server
+  link: "https://github.com/ark0723/mcp_from_scratch"
+  tagline: "Built a real-time cryptocurrency data server using FastMCP (Model Context Protocol); supports live price lookup, 24hr change tracking, and rolling window analytics via both STDIO and HTTP transports."
 
 # oss:
 #   title: OSS Contributions
@@ -234,6 +230,9 @@ skills:
   title: Skills &amp; Proficiency
 
   toolset:
+  - name: Python
+    level: 90%
+    
   - name: PyTorch & TensorFlow
     level: 90%
 
@@ -250,6 +249,9 @@ skills:
     level: 80%
 
   - name: Docker & AWS (EC2, S3)
+    level: 80%
+
+  - name: Spark / Databricks
     level: 80%
 
 footer: >
