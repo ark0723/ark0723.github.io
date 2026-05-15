@@ -178,8 +178,8 @@ projects:
     tagline: "Applied OpenPose to extract patient skeletal keypoints for clinical movement analysis, enabling quantitative assessment of physical rehabilitation progress."
 
   - title: Binance MCP Server
-  link: "https://github.com/ark0723/mcp_from_scratch"
-  tagline: "Built a real-time cryptocurrency data server using FastMCP (Model Context Protocol); supports live price lookup, 24hr change tracking, and rolling window analytics via both STDIO and HTTP transports."
+    link: "https://github.com/ark0723/mcp_from_scratch"
+    tagline: "Built a real-time cryptocurrency data server using FastMCP (Model Context Protocol); supports live price lookup, 24hr change tracking, and rolling window analytics via both STDIO and HTTP transports."
 
 # oss:
 #   title: OSS Contributions
