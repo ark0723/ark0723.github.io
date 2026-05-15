@@ -1,37 +1,32 @@
-#
 # Be aware that even a small syntax error here can lead to failures in output.
-#
 
 sidebar:
   position: right
   about: True
   education: True
-  name: Ahla Ko
+  name: "Ahla Ko"
   tagline: "Decision Analytics & ML Systems Engineer"
-  avatar: mypic.jpg
-  email: ahlako@uark.edu
-  phone: 479 463 0914
-  timezone: America/Chicago
-  github: ark0723
+  avatar: "mypic.jpg"
+  email: "ahlako@uark.edu"
+  phone: "479 463 0914"
+  timezone: "America/Chicago"
+  github: "ark0723"
   languages:
-    title: Languages
+    title: "Languages"
     info:
-      - idiom: Korean
-        level: Native
-      - idiom: English
-        level: Professional
+      - idiom: "Korean"
+        level: "Native"
+      - idiom: "English"
+        level: "Professional"
   interests:
-    title: Interests
+    title: "Interests"
     info:
-      - item: Yoga
-        link:
-      - item: Walking
-        link:
-      - item: Cooking
-        link:
+      - item: "Yoga"
+      - item: "Walking"
+      - item: "Cooking"
 
 career-profile:
-  title: Career Profile
+  title: "Career Profile"
   summary: |
     Data systems specialist focused on integrating Deep Learning, Reinforcement Learning, and 
     Operations Research to solve complex decision-making problems. Experienced in managing 
@@ -43,30 +38,30 @@ career-profile:
     operational constraints.
 
 education:
-  title: Education
+  title: "Education"
   info:
-    - degree: Ph.D. in Industrial Engineering
-      university: University of Arkansas
-      time: 2018 - 2026
+    - degree: "Ph.D. in Industrial Engineering"
+      university: "University of Arkansas"
+      time: "2018 - 2026"
       details: |
         Dissertation: "From Data Digitization to Personalized Care: Deep Learning and Decision Analytics in Healthcare Systems"
         - Designed an automated OCR pipeline (YOLO/CRNN) and MDP-based treatment optimization models for complex clinical data.
         - Applied Deep Reinforcement Learning (PPO) and Computer Vision to enhance long-term patient outcomes and operational efficiency.
         - Integrated statistical sensitivity analysis and explainable AI (SHAP) to improve the interpretability of decision-support frameworks.
-    - degree: BSc in Chemistry Education 
-      university: Pusan National University
-      time: 2007 - 2011
+    - degree: "BSc in Chemistry Education"
+      university: "Pusan National University"
+      time: "2007 - 2011"
       details: |
         - Completed a curriculum focused on analytical chemistry and quantitative scientific methodologies.
         - Developed fundamental skills in experimental design, data collection, and laboratory management.
         - Built communication skills to present complex scientific concepts to diverse audiences.
 
 experiences:
-  title: Professional Experiences
+  title: "Professional Experiences"
   info:
-    - role: Graduate Research Assistant & Lead Developer
-      time: 2018 - Present
-      company: University of Arkansas
+    - role: "Graduate Research Assistant & Lead Developer"
+      time: "2018 - Present"
+      company: "University of Arkansas"
       details: |
         [Preventive Breast Cancer: Multi-Modal Prevention Strategy Optimization]
         - Engineered a comprehensive decision-support framework to optimize multi-modal prevention strategies.
@@ -78,18 +73,18 @@ experiences:
         [Medical Form Digitization: AI-Driven Healthcare Automation]
         - Engineered an end-to-end OCR pipeline (YOLOv11 + Residual CRNN) achieving 99.67% accuracy.
 
-    - role: Back-end Developer (Early Team)
-      time: 2021 - 2021
-      company: Heroworks, Busan (South Korea)
+    - role: "Back-end Developer (Early Team)"
+      time: "2021 - 2021"
+      company: "Heroworks, Busan (South Korea)"
       details: |
         Joined as an early engineer for "DatAmenity," a domestic Revenue Management System (RMS).
         - Developed core web application and JSON APIs for real-time pricing across 20+ OTA platforms.
         - Architected relational database schemas (PostgreSQL + SQLAlchemy).
         - Built interactive dashboards and automated reporting systems using Flask.
 
-    - role: Research Analyst (Assistant Researcher)
-      time: 2016 - 2017
-      company: Korea Institute for Defense Analysis (KIDA), Seoul, South Korea
+    - role: "Research Analyst (Assistant Researcher)"
+      time: "2016 - 2017"
+      company: "Korea Institute for Defense Analysis (KIDA), Seoul, South Korea"
       details: |
         Applied mathematical optimization and quantitative analysis for national defense projects.
         - Developed a location optimization model for military gunnery ranges.
@@ -97,55 +92,53 @@ experiences:
         - Orchestrated systematic collection and preprocessing of raw datasets.
 
 projects:
-  title: Projects
+  title: "Projects"
   intro: >
     Accomplished in bridging the gap between machine learning research and production-grade applications. 
     Proven track record in implementing high-performance models (CV/RL) and architecting scalable 
     data pipelines using FastAPI, Docker, and hybrid Cloud/Local environments.
   assignments:
-    - title: Real-time Anomaly Detection & Service Migration
+    - title: "Real-time Anomaly Detection & Service Migration"
       link: "https://github.com/ark0723/anomaly_detection"
       tagline: "End-to-end ML workflow: Developed initial models on Azure Databricks and re-engineered the deployment pipeline to a local FastAPI environment."
-    - title: Neural Style Transfer - Research Paper Implementation
+    - title: "Neural Style Transfer - Research Paper Implementation"
       link: "https://github.com/ark0723/neural-style-transfer"
       tagline: "Full reproduction of Gatys et al. (CVPR 2016) with VGG19-based pipeline; achieved 6x faster convergence with L-BFGS."
-    - title: AI-Powered Custom Apparel Platform (MVP)
+    - title: "AI-Powered Custom Apparel Platform (MVP)"
       link: "https://github.com/ark0723/aif_deployment"
       tagline: "Architected a full-stack e-commerce prototype; integrated generative AI APIs into a microservices-based architecture."
-    - title: OpenPose for Medical Patient Analysis
+    - title: "OpenPose for Medical Patient Analysis"
       link: "https://github.com/ark0723/MyProject/tree/master/OpenPose"
       tagline: "Healthcare AI pipeline for clinical biomechanical assessment using deep learning-based skeletal pose estimation."
 
 publications:
-  title: Publications
+  title: "Publications"
   intro: |
-    Selected research papers focusing on the intersection of 
-    Deep Learning, Decision Analytics, and Healthcare Systems.
+    Selected research papers focusing on the intersection of Deep Learning, Decision Analytics, and Healthcare Systems.
   papers:
-    - title: Deep Learning-Based Automated Recognition of Hand-Filled Forms for Medical Study Questionnaires in Moldova
+    - title: "Deep Learning-Based Automated Recognition of Hand-Filled Forms for Medical Study Questionnaires in Moldova"
       link: "#"
-      authors: Ahla Ko, Yanjun Pan, Donald Catanzaro, Valeriu Crudu, Shengfan Zhang
+      authors: "Ahla Ko, Yanjun Pan, Donald Catanzaro, Valeriu Crudu, Shengfan Zhang"
       conference: "IEEE Transactions on Industrial Informatics (Submitted)"
 
 skills:
-  title: Skills & Proficiency
+  title: "Skills & Proficiency"
   toolset:
-    - name: PyTorch & TensorFlow
+    - name: "PyTorch & TensorFlow"
       level: 90%
-    - name: OpenCV
+    - name: "OpenCV"
       level: 80%
-    - name: Gymnasium
+    - name: "Gymnasium"
       level: 85%
-    - name: Pandas & Numpy
+    - name: "Pandas & Numpy"
       level: 95%
-    - name: FastAPI & Django
+    - name: "FastAPI & Django"
       level: 80%
-    - name: PostgreSQL & SQLAlchemy
+    - name: "PostgreSQL & SQLAlchemy"
       level: 90%
-    - name: Docker
+    - name: "Docker"
       level: 85%
-    - name: AWS (EC2, S3)
+    - name: "AWS (EC2, S3)"
       level: 75%
 
-footer: >
-  Copyright &copy; 2026 Ahla Ko.
+footer: "Copyright &copy; 2026 Ahla Ko."
