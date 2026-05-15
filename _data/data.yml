@@ -93,13 +93,13 @@ experiences:
     company: University of Arkansas, Fayetteville
     details: |
       [Preventive Breast Cancer: Multi-Modal Prevention Strategy Optimization]
-        - Engineered an RL-based decision framework for high-risk cohorts (BRCA1/2, PALB2), delivering 2.33–4.33 QALY improvements over current clinical guidelines.
-        - Identified optimal "Timing of Action" for surgical interventions (RRM/RRSO) via Comparative Utility Analysis, yielding a 1.45 QALY advantage over uniform strategies.
-        - Quantified policy logic using SHAP (Explainable AI), deconstructing the influence of age-specific menopausal status and MRI-elapsed time on surgical recommendations.
+        - Engineered an RL-based decision framework for high-risk cohorts, delivering 2.33–4.33 QALY improvements over current clinical guidelines.
+        - Identified optimal "Timing of Action" for surgical interventions via Comparative Utility Analysis, yielding a 1.45 QALY advantage over uniform strategies.
+        - Quantified policy logic using SHAP, deconstructing the influence of age-specific menopausal status and MRI-elapsed time on surgical recommendations.
       
       [Metastatic Breast Cancer (mBC): Strategic Treatment & Sensitivity Analytics]
         - Formulated a multi-stage therapy transition process into an MDP and developed a custom Gymnasium-based RL environment to optimize OS and Quality-of-Life trade-offs.
-        - Identified patient-centered thresholds for treatment escalation using PPO (Proximal Policy Optimization) and executed Tornado Analysis to validate optimal policy robustness.
+        - Identified patient-centered thresholds for treatment escalation using Proximal Policy Optimization and executed Tornado Analysis to validate optimal policy robustness.
         - Optimized "Cessation Timing" strategies for transitioning to Best Supportive Care (BSC), balancing evidence-based survival gains against treatment toxicity.
       
       [Medical Form Digitization: AI-Driven Healthcare Automation]
@@ -243,7 +243,7 @@ skills:
   - name: OpenCV
     level: 80%
 
-  - name: PostgreSQL & SQLAlchemy
+  - name: SQL
     level: 95%
 
   - name: FastAPI & Django
