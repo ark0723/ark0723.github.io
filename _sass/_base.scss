@@ -298,6 +298,7 @@ p {
 }
 
 .print-button {
+  display: none !important;
   position: fixed;
   top: 20px;
   right: 120px; // Changed from 20px to make space for the PDF button
