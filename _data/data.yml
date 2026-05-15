@@ -61,14 +61,11 @@ sidebar:
 career-profile:
   title: Career Profile
   summary: |
-    Data systems specialist focused on integrating Deep Learning, Reinforcement Learning, and 
-    Operations Research to solve complex decision-making problems. Experienced in managing 
-    end-to-end machine learning workflows—from data digitization and ETL processes to model 
-    deployment. Adept at translating research methodologies into functional tools, with 
-    practical experience in re-engineering deployment pipelines to ensure cost-efficient 
-    operations across both cloud and local environments. Proven ability to deliver data-driven 
-    solutions in healthcare and defense sectors that balance clinical utility with real-world 
-    operational constraints.
+    Data systems specialist integrating Deep Learning, Reinforcement Learning, and Operations 
+    Research to solve complex decision-making problems. Experienced in managing end-to-end 
+    ML lifecycles—from high-precision OCR and ETL to scalable model deployment. Adept at 
+    re-engineering research-based pipelines into cost-efficient, production-ready tools 
+    that balance clinical utility with real-world operational constraints.
 education:
   title: Education
   info:
@@ -170,9 +167,7 @@ experiences:
 projects:
   title: Projects
   intro: >
-    Accomplished in bridging the gap between machine learning research and production-grade applications. 
-    Proven track record in implementing high-performance models (CV/RL) and architecting scalable 
-    data pipelines using FastAPI, Docker, and hybrid Cloud/Local environments.
+    Technical implementations bridging ML research and production-grade applications.
   assignments:
   - title: Real-time Anomaly Detection & Service Migration
     link: "https://github.com/ark0723/anomaly_detection"
@@ -210,7 +205,7 @@ projects:
 publications:
   title: Publications
   intro: |
-    Selected research papers focusing on the intersection of Deep Learning, Decision Analytics, and Healthcare Systems.
+    Research on Deep Learning and Decision Analytics in Healthcare Systems.
   papers:
   - title: Deep Learning-Based Automated Recognition of Hand-Filled Forms for Medical Study Questionnaires in Moldova
     link: "#"
