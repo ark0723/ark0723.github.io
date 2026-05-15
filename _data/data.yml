@@ -1,32 +1,65 @@
+#
 # Be aware that even a small syntax error here can lead to failures in output.
+#
 
 sidebar:
-  position: right
-  about: True
-  education: True
-  name: "Ahla Ko"
-  tagline: "Decision Analytics & ML Systems Engineer"
-  avatar: "mypic.jpg"
-  email: "ahlako@uark.edu"
-  phone: "479 463 0914"
-  timezone: "America/Chicago"
-  github: "ark0723"
+  position: right # position of the sidebar : left or right
+  about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
+  education: True # set to False if you want education in main section instead of in sidebar
+
+  # Profile information
+  name: Ahla Ko
+  tagline: Decision Analytics & ML Systems Engineer
+  avatar: mypic.jpg #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+
+  # Sidebar links
+  email: ahlako@uark.edu
+  phone: 479 463 0914 
+  timezone: America/Chicago # Enter your timezone, e.g., America/Havana, Africa/Casablanca, America/North_Dakota/Center
+  # citizenship:
+  # website: https://example.com/ # Include the full website URL, including "http://" or "https://".
+  # linkedin: alandoe
+  # xing: alandoe
+  github: ark0723
+  # telegram: # add your nickname without '@' sign
+  # gitlab:
+  # bitbucket:
+  # bluesky: '@jekyllrb.bsky.social' # Specify your full Bluesky handle
+  # twitter: '@jekyllrb'
+  # stack-overflow: # Number/Username, e.g. 123456/alandoe
+  # codewars:
+  # goodreads: # Number-Username, e.g. 123456-alandoe
+  # mastodon: # Please include your full Mastodon link here.
+  # hackerrank: # Please provide your HackerRank username.
+  # leetcode: # Please provide your LeetCode username.
+  pdf: # Add a PDF link here if you want to include a PDF custom version in your resume.
+
   languages:
-    title: "Languages"
+    title: Languages
     info:
-      - idiom: "Korean"
-        level: "Native"
-      - idiom: "English"
-        level: "Professional"
+    - idiom: Korean
+      level: Native
+
+    - idiom: English
+      level: Professional
+
   interests:
-    title: "Interests"
+    title: Interests
     info:
-      - item: "Yoga"
-      - item: "Walking"
-      - item: "Cooking"
+    - item: Yoga
+      link:
+
+
+    - item: Walking
+      link:
+
+
+    - item: Cooking
+      link:
+
 
 career-profile:
-  title: "Career Profile"
+  title: Career Profile
   summary: |
     Data systems specialist focused on integrating Deep Learning, Reinforcement Learning, and 
     Operations Research to solve complex decision-making problems. Experienced in managing 
@@ -36,109 +69,210 @@ career-profile:
     operations across both cloud and local environments. Proven ability to deliver data-driven 
     solutions in healthcare and defense sectors that balance clinical utility with real-world 
     operational constraints.
-
 education:
-  title: "Education"
+  title: Education
   info:
-    - degree: "Ph.D. in Industrial Engineering"
-      university: "University of Arkansas"
-      time: "2018 - 2026"
-      details: |
-        Dissertation: "From Data Digitization to Personalized Care: Deep Learning and Decision Analytics in Healthcare Systems"
+  - degree: Ph.D. in Industrial Engineering
+    university: University of Arkansas
+    time: 2018 - 2026
+    details: |
+      Dissertation: "From Data Digitization to Personalized Care: Deep Learning and Decision Analytics in Healthcare Systems"
         - Designed an automated OCR pipeline (YOLO/CRNN) and MDP-based treatment optimization models for complex clinical data.
         - Applied Deep Reinforcement Learning (PPO) and Computer Vision to enhance long-term patient outcomes and operational efficiency.
         - Integrated statistical sensitivity analysis and explainable AI (SHAP) to improve the interpretability of decision-support frameworks.
-    - degree: "BSc in Chemistry Education"
-      university: "Pusan National University"
-      time: "2007 - 2011"
-      details: |
+  - degree: BSc in Chemistry Education
+    university: Pusan National University
+    time: 2007 - 2011
+    details: |
         - Completed a curriculum focused on analytical chemistry and quantitative scientific methodologies.
         - Developed fundamental skills in experimental design, data collection, and laboratory management.
         - Built communication skills to present complex scientific concepts to diverse audiences.
 
 experiences:
-  title: "Professional Experiences"
+  title: Experiences
   info:
-    - role: "Graduate Research Assistant & Lead Developer"
-      time: "2018 - Present"
-      company: "University of Arkansas"
-      details: |
-        [Preventive Breast Cancer: Multi-Modal Prevention Strategy Optimization]
-        - Engineered a comprehensive decision-support framework to optimize multi-modal prevention strategies.
-        - Achieved substantial clinical utility gains (2.33–4.33 QALY improvements).
-        - Utilized SHAP (Explainable AI) to deconstruct policy network decision logic.
-        [Metastatic Breast Cancer (mBC): Strategic Treatment & Sensitivity Analytics]
-        - Formulated a multi-stage treatment decision process into a Markov Decision Process (MDP).
-        - Developed a custom Gymnasium-based reinforcement learning environment.
-        [Medical Form Digitization: AI-Driven Healthcare Automation]
-        - Engineered an end-to-end OCR pipeline (YOLOv11 + Residual CRNN) achieving 99.67% accuracy.
+  - role: Lead Developer
+    time: 2015 - Present
+    company: Startup Hubs, San Francisco
+    details: |
+      Describe your role here lorem ipsum dolor sit amet, consectetuer
+      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+      Cum sociis natoque penatibus et magnis dis parturient montes,
+      nascetur ridiculus mus. Donec quam felis, ultricies nec,
+      pellentesque eu, pretium quis, sem. Nulla consequat massa quis
+      enim. Donec pede justo. Sed ut perspiciatis unde omnis iste natus
+      error sit voluptatem accusantium doloremque laudantium, totam rem
+      aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+      architecto beatae vitae dicta sunt explicabo.
+        - Bullet point
+        - Bullet point
+  - role: Senior Software Engineer
+    time: 2014 - 2015
+    company: Google, London
+    details: |
+      Describe your role here lorem ipsum dolor sit amet, consectetuer
+      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+      Cum sociis natoque penatibus et magnis dis parturient montes,
+      nascetur ridiculus mus. Donec quam felis, ultricies nec,
+      pellentesque eu, pretium quis, sem.
+        - Bullet point
+        - Bullet point
+  - role: UI Developer
+    time: 2012 - 2014
+    company: Amazon, London
+    details: |
+      Describe your role here lorem ipsum dolor sit amet, consectetuer
+      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+      Cum sociis natoque penatibus et magnis dis parturient montes,
+      nascetur ridiculus mus. Donec quam felis, ultricies nec,
+      pellentesque eu, pretium quis, sem.
+        - Bullet point
+        - Bullet point
 
-    - role: "Back-end Developer (Early Team)"
-      time: "2021 - 2021"
-      company: "Heroworks, Busan (South Korea)"
-      details: |
-        Joined as an early engineer for "DatAmenity," a domestic Revenue Management System (RMS).
-        - Developed core web application and JSON APIs for real-time pricing across 20+ OTA platforms.
-        - Architected relational database schemas (PostgreSQL + SQLAlchemy).
-        - Built interactive dashboards and automated reporting systems using Flask.
+certifications:
+  title: Certifications
+  list:
+  - name: CV Builder
+    start: 2020
+    end: 2021
+    organization: Microsoft
+    credentialid: 111-222
+    credentialurl: www.google.com
+    credentialname: Google
+    details: |
+      Details about cert. Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit.
+      Nullam eget orci purus. Nullam ultrices neque nibh.
+      Aenean fermentum, felis vulputate suscipit accumsan,
+      sem enim bibendum augue, sed convallis arcu lacus at dui.
+      Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
+      Praesent felis nibh, eleifend id eleifend id, dictum id enim.
+      Praesent venenatis erat non augue suscipit consectetur.
 
-    - role: "Research Analyst (Assistant Researcher)"
-      time: "2016 - 2017"
-      company: "Korea Institute for Defense Analysis (KIDA), Seoul, South Korea"
-      details: |
-        Applied mathematical optimization and quantitative analysis for national defense projects.
-        - Developed a location optimization model for military gunnery ranges.
-        - Synthesized and standardized multi-source defense data for ROK-U.S. cost-sharing negotiations.
-        - Orchestrated systematic collection and preprocessing of raw datasets.
+      Second paragraph. Sed eleifend enim ante, vitae efficitur purus
+      fringilla vel. Ut euismod, sem sed vulputate venenatis,
+      justo diam viverra velit, sed rhoncus leo leo eu justo.
+      Suspendisse placerat risus ante, sed porta nisi blandit at.
+  - name: Git learning
+    start: 2019
+    end:
+    organization: Microsoft
+    credentialid: 111-222
+    credentialurl: www.github.com
+    credentialname: Github
+    details: |
+      Older certification. Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit.
+      Nullam eget orci purus. Nullam ultrices neque nibh.
+      Aenean fermentum, felis vulputate suscipit accumsan,
+      sem enim bibendum augue, sed convallis arcu lacus at dui.
+      Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
+      Praesent felis nibh, eleifend id eleifend id, dictum id enim.
+      Praesent venenatis erat non augue suscipit consectetur.
 
 projects:
-  title: "Projects"
+  title: Projects
   intro: >
-    Accomplished in bridging the gap between machine learning research and production-grade applications. 
-    Proven track record in implementing high-performance models (CV/RL) and architecting scalable 
-    data pipelines using FastAPI, Docker, and hybrid Cloud/Local environments.
+    You can list your side projects in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
   assignments:
-    - title: "Real-time Anomaly Detection & Service Migration"
-      link: "https://github.com/ark0723/anomaly_detection"
-      tagline: "End-to-end ML workflow: Developed initial models on Azure Databricks and re-engineered the deployment pipeline to a local FastAPI environment."
-    - title: "Neural Style Transfer - Research Paper Implementation"
-      link: "https://github.com/ark0723/neural-style-transfer"
-      tagline: "Full reproduction of Gatys et al. (CVPR 2016) with VGG19-based pipeline; achieved 6x faster convergence with L-BFGS."
-    - title: "AI-Powered Custom Apparel Platform (MVP)"
-      link: "https://github.com/ark0723/aif_deployment"
-      tagline: "Architected a full-stack e-commerce prototype; integrated generative AI APIs into a microservices-based architecture."
-    - title: "OpenPose for Medical Patient Analysis"
-      link: "https://github.com/ark0723/MyProject/tree/master/OpenPose"
-      tagline: "Healthcare AI pipeline for clinical biomechanical assessment using deep learning-based skeletal pose estimation."
+  - title: Velocity
+    link: "#hook"
+    tagline: "A responsive website template designed to help startups promote, market and sell their products."
+
+  - title: DevStudio
+    link: "#"
+    tagline: "A responsive website template designed to help web developers/designers market their services."
+
+  - title: Tempo
+    link: "#"
+    tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
+
+  - title: Atom
+    link: "#"
+    tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
+
+  - title: Delta
+    link: "#"
+    tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
+
+oss:
+  title: OSS Contributions
+  intro: >
+    You can list your open source software contributions in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
+  contributions:
+  - title: Tempo
+    link: "#"
+    tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
+
+  - title: Atom
+    link: "#"
+    tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
+
+  - title: Delta
+    link: "#"
+    tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
 
 publications:
-  title: "Publications"
+  title: Publications
   intro: |
-    Selected research papers focusing on the intersection of Deep Learning, Decision Analytics, and Healthcare Systems.
+    You can list your publications in this section. Lorem ipsum dolor sit
+    amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
+    bibendum fringilla a eu lectus.
   papers:
-    - title: "Deep Learning-Based Automated Recognition of Hand-Filled Forms for Medical Study Questionnaires in Moldova"
-      link: "#"
-      authors: "Ahla Ko, Yanjun Pan, Donald Catanzaro, Valeriu Crudu, Shengfan Zhang"
-      conference: "IEEE Transactions on Industrial Informatics (Submitted)"
+  - title: The Art of Computer Programming
+    link: "#"
+    authors: Donald E. Knuth
+    conference: Addison-Wesley, 1968
+
+  - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
+    link: "#"
+    authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
+    conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
+
+  - title: A syntax directed compiler for Algol 60
+    link: "#"
+    authors: Edgar T. Irons
+    conference: "Comm. ACM 4 (1961), 51–55"
+
+recommendations:
+  title: Recommendations
+  list:
+  - person: Yareli Perez
+    email: perezyareli@example.com
+    phone: 012 345 6789
+    role: General Director at example.com
+    recommendation: |
+      Alan Doe is a super employee!
+  - person: Lara Henderson
+    email: larah@example.com
+    phone: 012 345 6789
+    role: General Director at example.com
+    recommendation: |
+      I would like to work with Alan Doe again!
+
+      He is a great employee!
 
 skills:
-  title: "Skills & Proficiency"
-  toolset:
-    - name: "PyTorch & TensorFlow"
-      level: 90%
-    - name: "OpenCV"
-      level: 80%
-    - name: "Gymnasium"
-      level: 85%
-    - name: "Pandas & Numpy"
-      level: 95%
-    - name: "FastAPI & Django"
-      level: 80%
-    - name: "PostgreSQL & SQLAlchemy"
-      level: 90%
-    - name: "Docker"
-      level: 85%
-    - name: "AWS (EC2, S3)"
-      level: 75%
+  title: Skills &amp; Proficiency
 
-footer: "Copyright &copy; 2026 Ahla Ko."
+  toolset:
+  - name: Python & Django
+    level: 98%
+
+  - name: Javascript & jQuery
+    level: 98%
+
+  - name: Angular
+    level: 98%
+
+  - name: HTML5 & CSS
+    level: 95%
+
+  - name: Ruby on Rails
+    level: 85%
+
+  - name: Sketch & Photoshop
+    level: 60%
+
+footer: >
+  Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
