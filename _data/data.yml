@@ -9,8 +9,8 @@ sidebar:
 
   # Profile information
   name: Ahla Ko
-  tagline: Full Stack Developer
-  avatar: profile.png #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+  tagline: Decision Analytics & ML Systems Engineer # Machine Learning & Operations Research Engineer
+  avatar: mypic.jpg #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
   # Sidebar links
   email: ahlako@uark.edu
@@ -64,12 +64,14 @@ sidebar:
 career-profile:
   title: Career Profile
   summary: |
-    Summarise your career here lorem ipsum dolor sit amet, consectetuer
-    adipiscing elit. You can [download this free resume/CV template here]().
-    Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque
-    penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    Donec quam felis, ultricies nec, pellentesque eu.
-    Second paragraph if required.
+    Data systems specialist focused on integrating Deep Learning, Reinforcement Learning, and 
+    Operations Research to solve complex decision-making problems. Experienced in managing 
+    end-to-end machine learning workflows—from data digitization and ETL processes to model 
+    deployment. Adept at translating research methodologies into functional tools, with 
+    practical experience in re-engineering deployment pipelines to ensure cost-efficient 
+    operations across both cloud and local environments. Proven ability to deliver data-driven 
+    solutions in healthcare and defense sectors that balance clinical utility with real-world 
+    operational constraints.
 education:
   title: Education
   info:
@@ -77,25 +79,18 @@ education:
     university: University of Arkansas
     time: 2018 - 2026
     details: |
-      Describe your study here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-      sociis natoque penatibus et magnis dis parturient montes, nascetur
-      ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-      pretium quis, sem.
-        - Bullet point
-        - Bullet point
+      Dissertation: "From Data Digitization to Personalized Care: Deep Learning and Decision Analytics in Healthcare Systems"
+        - Designed an automated OCR pipeline (YOLO/CRNN) and MDP-based treatment optimization models for complex clinical data.
+        - Applied Deep Reinforcement Learning (PPO) and Computer Vision to enhance long-term patient outcomes and operational efficiency.
+        - Integrated statistical sensitivity analysis and explainable AI (SHAP) to improve the interpretability of decision-support frameworks.
   - degree: BSc in Chemistry Education 
     university: Pusan National University
     time: 2007 - 2011
     details: |
-      Describe your study here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-      sociis natoque penatibus et magnis dis parturient montes, nascetur
-      ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-      pretium quis, sem.
-        - Bullet point
-        - Bullet point
-
+      - Completed a curriculum focused on analytical chemistry and quantitative scientific methodologies.
+      - Developed fundamental skills in experimental design, data collection, and laboratory management.
+      - Built communication skills to present complex scientific concepts to diverse audiences.
+      
 experiences:
   title: Professional Experiences
   info:
@@ -268,39 +263,33 @@ publications:
 
 #       He is a great employee!
 
-# skills:
-#   title: Skills &amp; Proficiency
-
-#   toolset:
-#   - name: Python & Django
-#     level: 98%
-
-#   - name: Javascript & jQuery
-#     level: 98%
-
-#   - name: Angular
-#     level: 98%
-
-#   - name: HTML5 & CSS
-#     level: 95%
-
-#   - name: Ruby on Rails  
-#     level: 85%
-
-#   - name: Sketch & Photoshop
-#     level: 60%
-
 skills:
-  title: Technical Skills
+  title: Skills &amp; Proficiency
 
   toolset:
-    - name: "Languages: Python, SQL"
+    - name: PyTorch & TensorFlow
+      level: 90%
 
-    - name: "AI/ML: PyTorch, Scikit-learn, Reinforcement Learning (PPO, MDP), Computer Vision (YOLO, CRNN)"
+    - name: OpenCV
+      level: 80%
 
-    - name: "Engineering: FastAPI, Django, Docker, MLflow, RESTful APIs"
+    - name: Gymnasium
+      level: 85%
 
-    - name: "Cloud & Infrastructure: Azure Databricks, AWS (EC2/S3)"
+    - name: Pandas & Numpy
+      level: 95%
+
+    - name: FastAPI & Django
+      level: 80%
+
+    - name: PostgreSQL & SQLAlchemy
+      level: 90%
+
+    - name: Docker
+      level: 85%
+
+    - name: AWS(EC2,S3)
+      level: 75%
 
 footer: >
   Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
