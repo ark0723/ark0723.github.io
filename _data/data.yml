@@ -165,27 +165,25 @@ experiences:
 projects:
   title: Projects
   intro: >
-    You can list your side projects in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
+    Accomplished in bridging the gap between machine learning research and production-grade applications. 
+    Proven track record in implementing high-performance models (CV/RL) and architecting scalable 
+    data pipelines using FastAPI, Docker, and hybrid Cloud/Local environments.
   assignments:
-  - title: Velocity
-    link: "#hook"
-    tagline: "A responsive website template designed to help startups promote, market and sell their products."
+  - title: Real-time Anomaly Detection & Service Migration
+    link: "https://github.com/ark0723/anomaly_detection"
+    tagline: "End-to-end ML workflow: Developed initial models on Azure Databricks and re-engineered the deployment pipeline to a local FastAPI environment."
 
-  - title: DevStudio
-    link: "#"
-    tagline: "A responsive website template designed to help web developers/designers market their services."
+  - title: Neural Style Transfer - Research Paper Implementation
+    link: "https://github.com/ark0723/neural-style-transfer"
+    tagline: "Architected a full-stack e-commerce prototype; integrated generative AI APIs into a microservices-based architecture."
 
-  - title: Tempo
-    link: "#"
+  - title: AI-Powered Custom Apparel Platform (MVP)
+    link: "https://github.com/ark0723/aif_deployment"
     tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
 
-  - title: Atom
-    link: "#"
-    tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
-
-  - title: Delta
-    link: "#"
-    tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
+  - title: OpenPose for Medical Patient Analysis
+    link: "https://github.com/ark0723/MyProject/tree/master/OpenPose"
+    tagline: "Healthcare AI pipeline for clinical biomechanical assessment using deep learning-based skeletal pose estimation."
 
 # oss:
 #   title: OSS Contributions
@@ -207,24 +205,12 @@ projects:
 publications:
   title: Publications
   intro: |
-    You can list your publications in this section. Lorem ipsum dolor sit
-    amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
-    bibendum fringilla a eu lectus.
+    Selected research papers focusing on the intersection of Deep Learning, Decision Analytics, and Healthcare Systems.
   papers:
-  - title: The Art of Computer Programming
+  - title: Deep Learning-Based Automated Recognition of Hand-Filled Forms for Medical Study Questionnaires in Moldova
     link: "#"
-    authors: Donald E. Knuth
-    conference: Addison-Wesley, 1968
-
-  - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
-    link: "#"
-    authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
-    conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
-
-  - title: A syntax directed compiler for Algol 60
-    link: "#"
-    authors: Edgar T. Irons
-    conference: "Comm. ACM 4 (1961), 51–55"
+    authors: Ahla Ko, Yanjun Pan, Donald Catanzaro, Valeriu Crudu, Shengfan Zhang
+    conference: IEEE Transactions on Industrial Informatics (Submitted)
 
 # recommendations:
 #   title: Recommendations
@@ -248,23 +234,29 @@ skills:
   title: Skills &amp; Proficiency
 
   toolset:
-  - name: Python & Django
-    level: 98%
+  - name: PyTorch & TensorFlow
+    level: 90%
 
-  - name: Javascript & jQuery
-    level: 98%
-
-  - name: Angular
-    level: 98%
-
-  - name: HTML5 & CSS
+  - name: Pandas & Numpy
     level: 95%
 
-  - name: Ruby on Rails
+  - name: OpenCV
+    level: 80%
+
+  - name: PostgreSQL & SQLAlchemy
+    level: 95%
+
+  - name: Gymnasium
     level: 85%
 
-  - name: Sketch & Photoshop
-    level: 60%
+  - name: FastAPI & Django
+    level: 80%
+
+  - name: Docker
+    level: 85%
+
+  - name: AWS (EC2, S3)
+    level: 70%
 
 footer: >
   Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
