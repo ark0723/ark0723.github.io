@@ -9,7 +9,7 @@ sidebar:
 
   # Profile information
   name: Ahla Ko
-  tagline: Decision Analytics & ML Systems Engineer
+  tagline: Operations Scientist | Data Scientist
   avatar: mypic.jpg #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
   # Sidebar links
@@ -61,21 +61,26 @@ sidebar:
 career-profile:
   title: Career Profile
   summary: |
-    Data scientist and ML engineer with hands-on experience across academic research and industry, building end-to-end ML pipelines from data digitization to production deployment. Proven track record of translating complex research (RL, MDP, Computer Vision) into operational tools that cut costs and drive measurable outcomes. Experienced across healthcare AI, revenue management, and defense analytics; comfortable owning full ML lifecycles independently.
+    Operations Scientist and Data Scientist with hands-on experience across academic research and industry, building end-to-end ML pipelines from data digitization to production deployment. Proven track record of translating complex research (RL, MDP, Computer Vision) into operational tools that cut costs and drive measurable outcomes. Experienced across healthcare AI, supply chain analytics, revenue management, and defense analytics; comfortable owning full ML lifecycles independently.
 education:
   title: Education
   info:
   - degree: Ph.D. in Industrial Engineering
     university: University of Arkansas
-    time: 2018 - 2026
+    time: 2026
     details: |
       Dissertation: "From Data Digitization to Personalized Care: Deep Learning and Decision Analytics in Healthcare Systems"
     #     - Designed an automated OCR pipeline (YOLO/CRNN) and MDP-based treatment optimization models for complex clinical data.
     #     - Applied Deep Reinforcement Learning (PPO) and Computer Vision to enhance long-term patient outcomes and operational efficiency.
     #     - Integrated statistical sensitivity analysis and explainable AI (SHAP) to improve the interpretability of decision-support frameworks.
+  - degree: M.S. in International Logistics
+    university: Pusan National University
+    time: 2015
+    details: |
+      Thesis: "Blood platelet production planning and inventory management considering demand fill rate"
   - degree: BSc in Chemistry Education
     university: Pusan National University
-    time: 2007 - 2011
+    time: 2011
     # details: |
     #     - Completed a curriculum focused on analytical chemistry and quantitative scientific methodologies.
     #     - Developed fundamental skills in experimental design, data collection, and laboratory management.
@@ -96,15 +101,19 @@ experiences:
       [Metastatic Breast Cancer (mBC): Strategic Treatment & Sensitivity Analytics]
         - Built a custom RL simulation environment (OpenAI Gymnasium) modeling multi-stage treatment transitions for metastatic cancer patients, optimizing the balance between overall survival and quality of life.
         - Identified patient-centered thresholds for treatment escalation using Proximal Policy Optimization and executed Tornado Analysis to validate optimal policy robustness.
-        - Identified optimal timing to transition patients to supportive care, quantifying the survival-vs-toxicity trade-off to support evidence-based end-of-life treatment decisions..
+        - Identified optimal timing to transition patients to supportive care, quantifying the survival-vs-toxicity trade-off to support evidence-based end-of-life treatment decisions.
       
       [Medical Form Digitization: AI-Driven Healthcare Automation]
         - Engineered an end-to-end OCR pipeline (YOLOv11 + Residual CRNN) for medical record digitization, achieving 99.67% accuracy (EMA) and reducing manual processing costs by over 90%.
         - Established a "Human-in-the-Loop" validation system with an optimal confidence threshold, automating 91% of total data entries while maintaining a clinical-grade error rate below 0.2%.
         - Implemented deterministic audit trails and rule-based consistency checks to ensure HIPAA-compliant data governance and traceability.
         - See also: related publication under review (IEEE TII)
+
+      [Teaching & Mentorship]
+        - Served as Teaching Assistant for Applied Probability & Statistics for Engineers (INEG 2313 I & II); conducted grading and student evaluation across multiple semesters.
+        - Co-instructed introductory probability coursework during summer session, delivering lectures and supporting curriculum delivery.
   - role: Back-End Developer (Early Team)
-    time: 2021 - 2021
+    time: 2021
     company: Heroworks, Busan (South Korea)
     details: |
       Joined as an early engineer for "DatAmenity," a B2B Revenue Management System (RMS) for the hospitality industry (Seed-stage startup).
@@ -116,7 +125,7 @@ experiences:
     company: Korea Institute for Defense Analysis (KIDA), Seoul (South Korea)
     details: |
       Applied mathematical optimization and quantitative analysis for national defense projects.
-        - Developed a facility location optimization model for military gunnery ranges, minimizing land costs while enforcing noise-impact constraints on residential areas..
+        - Developed a facility location optimization model for military gunnery ranges, minimizing land costs while enforcing noise-impact constraints on residential areas.
         - Synthesized and standardized multi-source defense data for ROK-U.S. cost-sharing negotiations, including collection and preprocessing of raw datasets.
 
 # certifications:
@@ -165,6 +174,9 @@ projects:
   intro: >
     Technical implementations bridging ML research and production-grade applications.
   assignments:
+  - title: Signal Matrix — Automated Equity Screening Pipeline
+    link: "https://github.com/ark0723/signal-matrix"
+    tagline: "Designed and backtested multi-factor swing-trading screeners (MA/RSI/volume, EPS, candlestick patterns) across 500+ S&P 500 equities using vectorbt (2020–2024); operationalized into a production daily pipeline with FRED macro integration, GitHub Actions automation, Telegram alerts, and a FastAPI member API (Clerk JWT). Public sanpshot: ahlako.me/signal-matrix"
   - title: Real-time Anomaly Detection & Service Migration
     link: "https://github.com/ark0723/anomaly_detection"
     tagline: "End-to-end ML workflow: Developed initial models on Azure Databricks and re-engineered the deployment pipeline to a local FastAPI environment."
@@ -173,13 +185,15 @@ projects:
     link: "https://github.com/ark0723/aif_deployment"
     tagline: "Built the backend and AI integration layer for an e-commerce MVP; integrated generative AI APIs into a microservices-based architecture."
 
+  - title: Binance MCP Server
+    link: "https://github.com/ark0723/mcp_from_scratch"
+    tagline: "Built a real-time cryptocurrency data server using FastMCP (Model Context Protocol); supports live price lookup, 24hr change tracking, and rolling window analytics via both STDIO and HTTP transports."
+
   - title: OpenPose for Medical Patient Analysis
     link: "https://github.com/ark0723/MyProject/tree/master/OpenPose"
     tagline: "Applied OpenPose to extract patient skeletal keypoints for clinical movement analysis, enabling quantitative assessment of physical rehabilitation progress."
 
-  - title: Binance MCP Server
-    link: "https://github.com/ark0723/mcp_from_scratch"
-    tagline: "Built a real-time cryptocurrency data server using FastMCP (Model Context Protocol); supports live price lookup, 24hr change tracking, and rolling window analytics via both STDIO and HTTP transports."
+  
 
 # oss:
 #   title: OSS Contributions
