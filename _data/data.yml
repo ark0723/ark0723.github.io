@@ -104,7 +104,7 @@ experiences:
         - Identified optimal timing to transition patients to supportive care, quantifying the survival-vs-toxicity trade-off to support evidence-based end-of-life treatment decisions.
       
       [Medical Form Digitization: AI-Driven Healthcare Automation]
-        - Engineered an end-to-end OCR pipeline (YOLOv11 + Residual CRNN) for medical record digitization, achieving 99.67% accuracy (EMA) and reducing manual processing costs by over 90%.
+        - Engineered an end-to-end OCR pipeline (YOLOv11 + Residual CRNN) for medical record digitization, achieving 99.75% accuracy (EMA) and reducing manual processing costs by over 90%.
         - Established a "Human-in-the-Loop" validation system with an optimal confidence threshold, automating 91% of total data entries while maintaining a clinical-grade error rate below 0.2%.
         - Implemented deterministic audit trails and rule-based consistency checks to ensure HIPAA-compliant data governance and traceability.
         - See also: related publication under review (IEEE TII)
