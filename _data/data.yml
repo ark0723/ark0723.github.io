@@ -73,11 +73,11 @@ education:
     #     - Designed an automated OCR pipeline (YOLO/CRNN) and MDP-based treatment optimization models for complex clinical data.
     #     - Applied Deep Reinforcement Learning (PPO) and Computer Vision to enhance long-term patient outcomes and operational efficiency.
     #     - Integrated statistical sensitivity analysis and explainable AI (SHAP) to improve the interpretability of decision-support frameworks.
-  - degree: M.S. in International Logistics
-    university: Pusan National University
-    time: 2015
-    details: |
-      Thesis: "Blood platelet production planning and inventory management considering demand fill rate"
+  # - degree: M.S. in International Logistics
+  #   university: Pusan National University
+  #   time: 2015
+  #   details: |
+  #     Thesis: "Blood platelet production planning and inventory management considering demand fill rate"
   - degree: BSc in Chemistry Education
     university: Pusan National University
     time: 2011
@@ -101,7 +101,7 @@ experiences:
       [Metastatic Breast Cancer (mBC): Strategic Treatment & Sensitivity Analytics]
         - Built a custom RL simulation environment (OpenAI Gymnasium) modeling multi-stage treatment transitions for metastatic cancer patients, optimizing the balance between overall survival and quality of life.
         - Identified patient-centered thresholds for treatment escalation using Proximal Policy Optimization and executed Tornado Analysis to validate optimal policy robustness.
-        - Identified optimal timing to transition patients to supportive care, quantifying the survival-vs-toxicity trade-off to support evidence-based end-of-life treatment decisions.
+        - Determined optimal timing to transition patients to supportive care, quantifying the survival-vs-toxicity trade-off to support evidence-based end-of-life treatment decisions.
       
       [Medical Form Digitization: AI-Driven Healthcare Automation]
         - Engineered an end-to-end OCR pipeline (YOLOv11 + Residual CRNN) for medical record digitization, achieving 99.75% accuracy (EMA) and reducing manual processing costs by over 90%.
@@ -177,9 +177,10 @@ projects:
   - title: Signal Matrix — Automated Equity Screening Pipeline
     link: "https://github.com/ark0723/signal-matrix"
     tagline: "Designed and backtested multi-factor swing-trading screeners (MA/RSI/volume, EPS, candlestick patterns) across 500+ S&P 500 equities using vectorbt (2020–2024); operationalized into a production daily pipeline with FRED macro integration, GitHub Actions automation, Telegram alerts, and a FastAPI member API (Clerk JWT). Public snapshot: ahlako.me/signal-matrix"
+  
   - title: Real-time Anomaly Detection & Service Migration
     link: "https://github.com/ark0723/anomaly_detection"
-    tagline: "End-to-end ML workflow: Developed initial models on Azure Databricks and re-engineered the deployment pipeline to a local FastAPI environment."
+    tagline: "Developed anomaly detection models on Azure Databricks with MLflow model management; re-engineered deployment to a local FastAPI server with a Streamlit web interface for real-time image prediction."
 
   - title: AI-Powered Custom Apparel Platform (MVP)
     link: "https://github.com/ark0723/aif_deployment"
@@ -188,10 +189,6 @@ projects:
   - title: Binance MCP Server
     link: "https://github.com/ark0723/mcp_from_scratch"
     tagline: "Built a real-time cryptocurrency data server using FastMCP (Model Context Protocol); supports live price lookup, 24hr change tracking, and rolling window analytics via both STDIO and HTTP transports."
-
-  - title: OpenPose for Medical Patient Analysis
-    link: "https://github.com/ark0723/MyProject/tree/master/OpenPose"
-    tagline: "Applied OpenPose to extract patient skeletal keypoints for clinical movement analysis, enabling quantitative assessment of physical rehabilitation progress."
 
   
 
