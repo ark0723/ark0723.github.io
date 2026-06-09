@@ -183,7 +183,7 @@ projects:
 
   - title: AI-Powered Custom Apparel Platform (MVP)
     link: "https://github.com/ark0723/aif_deployment"
-    tagline: "Built the backend and AI integration layer for an e-commerce MVP; integrated generative AI APIs into a microservices-based architecture."
+    tagline: "Built the backend for a custom t-shirt generation service transforming user keywords into AI-generated designs; architected a microservices backend (FastAPI + Django + Nginx) with Docker Compose, JWT authentication, and AWS S3 for image storage."
 
   - title: Binance MCP Server
     link: "https://github.com/ark0723/mcp_from_scratch"
