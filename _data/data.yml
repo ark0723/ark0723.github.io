@@ -176,7 +176,7 @@ projects:
   assignments:
   - title: Signal Matrix — Automated Equity Screening Pipeline
     link: "https://github.com/ark0723/signal-matrix"
-    tagline: "Designed and backtested multi-factor swing-trading screeners (MA/RSI/volume, EPS, candlestick patterns) across 500+ S&P 500 equities using vectorbt (2020–2024); operationalized into a production daily pipeline with FRED macro integration, GitHub Actions automation, Telegram alerts, and a FastAPI member API (Clerk JWT). Public sanpshot: ahlako.me/signal-matrix"
+    tagline: "Designed and backtested multi-factor swing-trading screeners (MA/RSI/volume, EPS, candlestick patterns) across 500+ S&P 500 equities using vectorbt (2020–2024); operationalized into a production daily pipeline with FRED macro integration, GitHub Actions automation, Telegram alerts, and a FastAPI member API (Clerk JWT). Public snapshot: ahlako.me/signal-matrix"
   - title: Real-time Anomaly Detection & Service Migration
     link: "https://github.com/ark0723/anomaly_detection"
     tagline: "End-to-end ML workflow: Developed initial models on Azure Databricks and re-engineered the deployment pipeline to a local FastAPI environment."
