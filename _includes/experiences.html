@@ -21,6 +21,12 @@
 
       <div class="company">{{ experience.company }}</div>
 
+      {% if experience.tech %}
+      <div class="tech" style="font-size: 0.85em; color: #666; margin-top: 4px;">
+        <strong>Tech:</strong> {{ experience.tech | join: " | " }}
+      </div>
+      {% endif %}
+
     </div><!--//meta-->
 
     {% if experience.details %}
