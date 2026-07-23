@@ -191,8 +191,6 @@ experiences:
 
 projects:
   title: Projects
-  intro: >
-    Technical implementations bridging ML research and production-grade applications.
   assignments:
   - title: Signal Matrix — Automated Equity Screening Pipeline
     link: "https://github.com/ark0723/signal-matrix"
@@ -257,8 +255,6 @@ projects:
 
 publications:
   title: Publications
-  intro: |
-    Research on Deep Learning and Decision Analytics in Healthcare Systems.
   papers:
   - title: Deep Learning-Based Automated Recognition of Hand-Filled Forms for Medical Study Questionnaires in Moldova
     link: "#"
