@@ -9,16 +9,15 @@ sidebar:
 
   # Profile information
   name: Ahla Ko
-  tagline: Operations Scientist | Data Scientist
+  tagline: Research Engineer | Machine Learning | AI Systems | Decision Analytics
   avatar: mypic.jpg #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
   # Sidebar links
-  email: ahlako@uark.edu
+  email: ark0723@gmail.com
   phone: 479 463 0914 
   timezone: America/Chicago # Enter your timezone, e.g., America/Havana, Africa/Casablanca, America/North_Dakota/Center
   # citizenship:
-  website: https://ahlako.me # Include the full website URL, including "http://" or "https://".
-  # linkedin: alandoe
+  linkedin: ahlako
   # xing: alandoe
   github: ark0723
   # telegram: # add your nickname without '@' sign
@@ -61,7 +60,7 @@ sidebar:
 career-profile:
   title: Career Profile
   summary: |
-    Operations Scientist and Data Scientist with hands-on experience across academic research and industry, building end-to-end ML pipelines from data digitization to production deployment. Proven track record of translating complex research (RL, MDP, Computer Vision) into operational tools that cut costs and drive measurable outcomes. Experienced across healthcare AI, supply chain analytics, revenue management, and defense analytics; comfortable owning full ML lifecycles independently.
+    Research Engineer specializing in machine learning, decision analytics, and AI systems development. Experienced in designing end-to-end intelligent systems spanning reinforcement learning, computer vision, quantitative finance, and production backend engineering. Focused on building AI systems that transform complex data into actionable decisions across healthcare, finance, and industrial domains.
 education:
   title: Education
   info:
@@ -73,11 +72,11 @@ education:
     #     - Designed an automated OCR pipeline (YOLO/CRNN) and MDP-based treatment optimization models for complex clinical data.
     #     - Applied Deep Reinforcement Learning (PPO) and Computer Vision to enhance long-term patient outcomes and operational efficiency.
     #     - Integrated statistical sensitivity analysis and explainable AI (SHAP) to improve the interpretability of decision-support frameworks.
-  # - degree: M.S. in International Logistics
-  #   university: Pusan National University
-  #   time: 2015
-  #   details: |
-  #     Thesis: "Blood platelet production planning and inventory management considering demand fill rate"
+  - degree: M.S. in International Logistics
+    university: Pusan National University
+    time: 2015
+    details: |
+      Thesis: "Blood platelet production planning and inventory management considering demand fill rate"
   - degree: BSc in Chemistry Education
     university: Pusan National University
     time: 2011
@@ -89,21 +88,23 @@ education:
 experiences:
   title: Experiences
   info:
-  - role: Research Assistant & Lead Developer
-    time: 2018 - Present
+  - role: Research Engineer (Research Assistant / Lead Developer)
+    time: 2018 - 2026
     company: University of Arkansas, Fayetteville
     details: |
-      [Preventive Breast Cancer: Multi-Modal Prevention Strategy Optimization]
-        - Built an RL-based decision support system (PPO) that personalizes cancer prevention strategies for high-risk patients (BRCA1/2, PALB2) by optimizing both intervention type (surgery vs. surveillance) and timing over a 45-year horizon, outperforming standard clinical guidelines by up to 4.33 quality-adjusted life years (QALYs).
-        - Identified strategic trade-offs between treatment aggressiveness and patient quality-of-life using Pareto analysis, revealing that guideline-based strategies underperform on both cancer prevention and patient utility when individual preferences are not accounted for.
+      Tech: Python | PyTorch | PPO | OpenAI Gymnasium | SHAP | YOLO | Residual CRNN | OpenCV | MDP 
+      
+      Clinical Decision Support for Preventive Breast Cancer
+        - Designed and developed an end-to-end reinforcement learning–based clinical decision support system that personalizes cancer prevention strategies for high-risk patients (BRCA1/2, PALB2) by optimizing both intervention type (surgery vs. surveillance) and timing over a 45-year horizon, outperforming standard clinical guidelines by up to 4.33 quality-adjusted life years (QALYs).
+        - Performed Pareto analysis to quantify trade-offs between treatment aggressiveness and patient quality of life between using Pareto analysis, revealing that guideline-based strategies underperform on both cancer prevention and patient utility when individual preferences are not accounted for.
         - Delivered model interpretability using SHAP to surface key decision drivers (menopausal status, breast density, patient preferences), making model recommendations transparent and defensible for clinical decision-making.
       
-      [Metastatic Breast Cancer (mBC): Strategic Treatment & Sensitivity Analytics]
-        - Built a custom RL simulation environment (OpenAI Gymnasium) modeling multi-stage treatment transitions for metastatic cancer patients, optimizing the balance between overall survival and quality of life.
-        - Identified patient-centered thresholds for treatment escalation using Proximal Policy Optimization and executed Tornado Analysis to validate optimal policy robustness.
-        - Determined optimal timing to transition patients to supportive care, quantifying the survival-vs-toxicity trade-off to support evidence-based end-of-life treatment decisions.
+      Metastatic Breast Cancer Treatment Optimization
+        - Designed and implemented a custom RL simulation environment (OpenAI Gymnasium) modeling multi-stage treatment transitions for metastatic cancer patients, optimizing the balance between overall survival and quality of life.
+        - Validated patient-centered thresholds for treatment escalation using Proximal Policy Optimization and executed Tornado Analysis to validate optimal policy robustness.
+        - Quantified optimal timing to transition patients to supportive care, quantifying the survival-vs-toxicity trade-off to support evidence-based end-of-life treatment decisions.
       
-      [Medical Form Digitization: AI-Driven Healthcare Automation]
+      Medical Document Intelligence Platform
         - Engineered an end-to-end OCR pipeline (YOLOv11 + Residual CRNN) for medical record digitization, achieving 99.75% accuracy (EMA) and reducing manual processing costs by over 90%.
         - Established a "Human-in-the-Loop" validation system with an optimal confidence threshold, automating 91% of total data entries while maintaining a clinical-grade error rate below 0.2%.
         - Implemented deterministic audit trails and rule-based consistency checks to ensure HIPAA-compliant data governance and traceability.
@@ -116,17 +117,21 @@ experiences:
     time: 2021
     company: Heroworks, Busan (South Korea)
     details: |
+      Tech: PostgreSQL | SQLAlchemy | Flask | ApexCharts | REST API
+      
       Joined as an early engineer for "DatAmenity," a B2B Revenue Management System (RMS) for the hospitality industry (Seed-stage startup).
-        - Developed core web application and JSON APIs for real-time pricing across 20+ OTA platforms.
-        - Architected relational database schemas (PostgreSQL + SQLAlchemy).
-        - Built interactive dashboards and automated reporting systems using Flask.
+        - Developed backend services and REST APIs for a hotel revenue management platform supporting pricing intelligence across 20+ OTA channels using Flask, SQLAlchemy, and PostgreSQL.
+        - Collaborated with the Lead Developer to design relational database schemas and data models supporting hotel pricing, demand forecasting, and competitive market analysis.
+        - Built data-driven monitoring features including real-time pricing alerts, competitive pricing dashboards, demand visualization, and automated Excel reporting for hotel revenue optimization.
   - role: Research Analyst
     time: 2016 - 2017
     company: Korea Institute for Defense Analysis (KIDA), Seoul (South Korea)
     details: |
+      Tech: Mathematical Optimization | Data Analysis
+      
       Applied mathematical optimization and quantitative analysis for national defense projects.
         - Developed a facility location optimization model for military gunnery ranges, minimizing land costs while enforcing noise-impact constraints on residential areas.
-        - Collected and consolidated multi-source defense data across government agencies; prepared and presented strategic reports to senior officials (Deputy Directors, Administrative Officers) supporting ROK-U.S. cost-sharing negotiations.
+        - Synthesized and consolidated multi-source defense data across government agencies; prepared and presented strategic reports to senior officials (Deputy Directors, Administrative Officers) supporting ROK-U.S. cost-sharing negotiations.
 
 # certifications:
 #   title: Certifications
@@ -176,20 +181,23 @@ projects:
   assignments:
   - title: Signal Matrix — Automated Equity Screening Pipeline
     link: "https://github.com/ark0723/signal-matrix"
-    tagline: "Designed and backtested multi-factor swing-trading screeners (MA/RSI/volume, EPS, candlestick patterns) across 500+ S&P 500 equities using vectorbt (2020–2024); operationalized into a production daily pipeline with FRED macro integration, GitHub Actions automation, Telegram alerts, and a FastAPI member API (Clerk JWT). Public snapshot: ahlako.me/signal-matrix"
-  
+    tagline: "Designed and implemented a production-ready quantitative investment platform that automates daily equity screening across more than 500 S&P 500 companies. Combined technical, momentum, fundamental, and macroeconomic signals with automated data pipelines, Telegram notifications, and authenticated APIs to support systematic investment research."
+    Tech: PostgreSQL | FastAPI | vectorbt | GitHub Actions | Pandas | Plotly | Clerk | Telegram Bot
+    
   - title: Real-time Anomaly Detection & Service Migration
     link: "https://github.com/ark0723/anomaly_detection"
     tagline: "Developed anomaly detection models on Azure Databricks with MLflow model management; re-engineered deployment to a local FastAPI server with a Streamlit web interface for real-time image prediction."
-
+    Tech: Azure Databricks | MLflow | FastAPI | Streamlit | Pytorch
+    
   - title: AI-Powered Custom Apparel Platform (MVP)
     link: "https://github.com/ark0723/aif_deployment"
     tagline: "Built the backend for a custom t-shirt generation service transforming user keywords into AI-generated designs; architected a microservices backend (FastAPI + Django + Nginx) with Docker Compose, JWT authentication, and AWS S3 for image storage."
-
+    Tech: FastAPI | Django | Docker Compose | Nginx | JWT | AWS S3 | AWS EC2 | Prompt Engineering
+    
   - title: Binance MCP Server
     link: "https://github.com/ark0723/mcp_from_scratch"
-    tagline: "Built a real-time cryptocurrency data server using FastMCP (Model Context Protocol); supports live price lookup, 24hr change tracking, and rolling window analytics via both STDIO and HTTP transports."
-
+    tagline: "Implemented an MCP-compatible cryptocurrency data server using FastMCP.Supports both STDIO and HTTP transports while exposing reusable tools for AI agents, including real-time market data retrieval and rolling analytics.Built primarily to explore the Model Context Protocol ecosystem and AI agent integration patterns."
+    Tech: FastMCP | Model Context Protocol
   
 
 # oss:
@@ -217,7 +225,7 @@ publications:
   - title: Deep Learning-Based Automated Recognition of Hand-Filled Forms for Medical Study Questionnaires in Moldova
     link: "#"
     authors: Ahla Ko, Yanjun Pan, Donald Catanzaro, Valeriu Crudu, Shengfan Zhang
-    conference: IEEE Transactions on Industrial Informatics (Submitted)
+    conference: IEEE Transactions on Industrial Informatics (Under Review)
 
 # recommendations:
 #   title: Recommendations
@@ -237,33 +245,33 @@ publications:
 
 #       He is a great employee!
 
-skills:
-  title: Skills &amp; Proficiency
+# skills:
+#   title: Skills &amp; Proficiency
 
-  toolset:
-  - name: Python
-    level: 90%
+#   toolset:
+#   - name: Python
+#     level: 90%
     
-  - name: PyTorch & TensorFlow
-    level: 90%
+#   - name: PyTorch & TensorFlow
+#     level: 90%
 
-  - name: Pandas & Numpy
-    level: 95%
+#   - name: Pandas & Numpy
+#     level: 95%
 
-  - name: OpenCV
-    level: 80%
+#   - name: OpenCV
+#     level: 80%
 
-  - name: SQL
-    level: 95%
+#   - name: SQL
+#     level: 95%
 
-  - name: FastAPI & Django
-    level: 80%
+#   - name: FastAPI & Django
+#     level: 80%
 
-  - name: Docker & AWS (EC2, S3)
-    level: 80%
+#   - name: Docker & AWS (EC2, S3)
+#     level: 80%
 
-  - name: Spark / Databricks
-    level: 80%
+#   - name: Spark / Databricks
+#     level: 80%
 
 footer: >
   Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
