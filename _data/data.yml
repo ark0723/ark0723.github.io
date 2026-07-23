@@ -91,9 +91,18 @@ experiences:
   - role: Research Engineer (Research Assistant / Lead Developer)
     time: 2018 - 2026
     company: University of Arkansas, Fayetteville
-    details: |
-      Tech: Python | PyTorch | PPO | OpenAI Gymnasium | SHAP | YOLO | Residual CRNN | OpenCV | MDP 
+    tech: 
+      - Python
+      - PyTorch
+      - PPO
+      - OpenAI Gymnasium
+      - SHAP
+      - YOLO
+      - Residual CRNN
+      - OpenCV
+      - MDP 
       
+    details: |
       Clinical Decision Support for Preventive Breast Cancer
         - Designed and developed an end-to-end reinforcement learning–based clinical decision support system that personalizes cancer prevention strategies for high-risk patients (BRCA1/2, PALB2) by optimizing both intervention type (surgery vs. surveillance) and timing over a 45-year horizon, outperforming standard clinical guidelines by up to 4.33 quality-adjusted life years (QALYs).
         - Performed Pareto analysis to quantify trade-offs between treatment aggressiveness and patient quality of life between using Pareto analysis, revealing that guideline-based strategies underperform on both cancer prevention and patient utility when individual preferences are not accounted for.
@@ -116,9 +125,14 @@ experiences:
   - role: Back-End Developer (Early Team)
     time: 2021
     company: Heroworks, Busan (South Korea)
-    details: |
-      Tech: PostgreSQL | SQLAlchemy | Flask | ApexCharts | REST API
+    tech:
+      - PostgreSQL
+      - SQLAlchemy
+      - Flask
+      - ApexCharts
+      - REST API
       
+    details: |
       Joined as an early engineer for "DatAmenity," a B2B Revenue Management System (RMS) for the hospitality industry (Seed-stage startup).
         - Developed backend services and REST APIs for a hotel revenue management platform supporting pricing intelligence across 20+ OTA channels using Flask, SQLAlchemy, and PostgreSQL.
         - Collaborated with the Lead Developer to design relational database schemas and data models supporting hotel pricing, demand forecasting, and competitive market analysis.
@@ -126,9 +140,10 @@ experiences:
   - role: Research Analyst
     time: 2016 - 2017
     company: Korea Institute for Defense Analysis (KIDA), Seoul (South Korea)
+    tech:
+      - Mathematical Optimization
+      - Data Analysis
     details: |
-      Tech: Mathematical Optimization | Data Analysis
-      
       Applied mathematical optimization and quantitative analysis for national defense projects.
         - Developed a facility location optimization model for military gunnery ranges, minimizing land costs while enforcing noise-impact constraints on residential areas.
         - Synthesized and consolidated multi-source defense data across government agencies; prepared and presented strategic reports to senior officials (Deputy Directors, Administrative Officers) supporting ROK-U.S. cost-sharing negotiations.
@@ -181,23 +196,46 @@ projects:
   assignments:
   - title: Signal Matrix — Automated Equity Screening Pipeline
     link: "https://github.com/ark0723/signal-matrix"
+    tech: 
+      - PostgreSQL
+      - FastAPI
+      - vectorbt
+      - GitHub Actions
+      - Pandas
+      - Plotly
+      - Clerk
+      - Telegram Bot 
     tagline: "Designed and implemented a production-ready quantitative investment platform that automates daily equity screening across more than 500 S&P 500 companies. Combined technical, momentum, fundamental, and macroeconomic signals with automated data pipelines, Telegram notifications, and authenticated APIs to support systematic investment research."
-    Tech: PostgreSQL | FastAPI | vectorbt | GitHub Actions | Pandas | Plotly | Clerk | Telegram Bot
     
   - title: Real-time Anomaly Detection & Service Migration
     link: "https://github.com/ark0723/anomaly_detection"
+    tech: 
+      - Azure Databricks
+      - MLflow 
+      - FastAPI
+      - Streamlit
+      - Pytorch
     tagline: "Developed anomaly detection models on Azure Databricks with MLflow model management; re-engineered deployment to a local FastAPI server with a Streamlit web interface for real-time image prediction."
-    Tech: Azure Databricks | MLflow | FastAPI | Streamlit | Pytorch
     
   - title: AI-Powered Custom Apparel Platform (MVP)
     link: "https://github.com/ark0723/aif_deployment"
+    tech: 
+      - FastAPI
+      - Django
+      - Docker
+      - Nginx
+      - JWT
+      - AWS S3
+      - AWS EC2
+      - Prompt Engineering
     tagline: "Built the backend for a custom t-shirt generation service transforming user keywords into AI-generated designs; architected a microservices backend (FastAPI + Django + Nginx) with Docker Compose, JWT authentication, and AWS S3 for image storage."
-    Tech: FastAPI | Django | Docker Compose | Nginx | JWT | AWS S3 | AWS EC2 | Prompt Engineering
     
   - title: Binance MCP Server
     link: "https://github.com/ark0723/mcp_from_scratch"
+    tech: 
+      - FastMCP
+      - Model Context Protocol
     tagline: "Implemented an MCP-compatible cryptocurrency data server using FastMCP.Supports both STDIO and HTTP transports while exposing reusable tools for AI agents, including real-time market data retrieval and rolling analytics.Built primarily to explore the Model Context Protocol ecosystem and AI agent integration patterns."
-    Tech: FastMCP | Model Context Protocol
   
 
 # oss:
@@ -244,34 +282,6 @@ publications:
 #       I would like to work with Alan Doe again!
 
 #       He is a great employee!
-
-# skills:
-#   title: Skills &amp; Proficiency
-
-#   toolset:
-#   - name: Python
-#     level: 90%
-    
-#   - name: PyTorch & TensorFlow
-#     level: 90%
-
-#   - name: Pandas & Numpy
-#     level: 95%
-
-#   - name: OpenCV
-#     level: 80%
-
-#   - name: SQL
-#     level: 95%
-
-#   - name: FastAPI & Django
-#     level: 80%
-
-#   - name: Docker & AWS (EC2, S3)
-#     level: 80%
-
-#   - name: Spark / Databricks
-#     level: 80%
 
 footer: >
   Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
