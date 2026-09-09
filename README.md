@@ -1,21 +1,25 @@
-# Ahla Ko - Personal Portfolio & Resume
+# Ahla Ko — Selected Projects
 
-> Ph.D. in Industrial Engineering | Decision Analytics & ML Systems Engineer
+English-language project catalog for [ahlako.me](https://ahlako.me) (GitHub Pages).
 
-## About
+This site replaced the previous resume theme. Each card explains a repository in three parts — problem, approach, and result — so a visitor can understand the work without opening the code first.
 
-This is my personal portfolio website showcasing my research experience, projects, and publications in the fields of:
-- Healthcare AI & Decision Analytics
-- Machine Learning & Deep Learning
-- Computer Vision & OCR Systems
-- Revenue Management Systems
+## Projects
 
-## Live Website
+1. Signal Matrix
+2. Clinical Trial Navigator
+3. Preventive Breast Cancer Decision Support
+4. Real-time Anomaly Detection
+5. Neural Style Transfer
+6. Transformer from Scratch
+7. AI Custom Apparel Backend
+8. Medical OpenPose
+9. Binance MCP Server
 
-🌐 **Visit**: [ahlako.me](https://ahlako.me)
+## Local preview
 
-## Tech Stack
+```bash
+python3 -m http.server 4000
+```
 
-- **Framework**: Jekyll + GitHub Pages
-- **Theme**: Based on [Orbit Theme](https://github.com/sharu725/online-cv) by Xiaoying Riley
-- **Customizations**: Enhanced layout, updated content structure, personalized styling
+Then open `http://127.0.0.1:4000`.

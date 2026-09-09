@@ -1,24 +1,634 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ahla Ko — Selected Projects</title>
+    <meta
+      name="description"
+      content="Selected machine learning and systems projects by Ahla Ko: healthcare decision support, quantitative screening, computer vision, and agent tooling."
+    />
+    <meta property="og:title" content="Ahla Ko — Selected Projects" />
+    <meta
+      property="og:description"
+      content="A concise tour of public and research repositories: what each project does, how it works, and why it exists."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ahlako.me/" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Source+Sans+3:wght@400;650;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/portfolio.css" />
+  </head>
+  <body>
+    <a class="skip" href="#projects">Skip to projects</a>
+    <header>
+      <div class="wrap nav">
+        <a class="brand" href="#top">
+          <img src="assets/images/mypic.jpg" alt="Portrait of Ahla Ko" />
+          <div>
+            <strong>Ahla Ko</strong>
+            <span>Selected projects</span>
+          </div>
+        </a>
+        <nav class="nav-links" aria-label="Profile links">
+          <a href="https://github.com/ark0723">GitHub</a>
+          <a href="https://www.linkedin.com/in/ahlako">LinkedIn</a>
+          <a href="mailto:ark0723@gmail.com">Email</a>
+        </nav>
+      </div>
+    </header>
 
+    <main id="top">
+      <section class="wrap hero">
+        <div>
+          <p class="kicker">Project catalog</p>
+          <h1>What the repositories actually do.</h1>
+          <p class="lede">
+            I build machine learning systems that turn messy data into decisions —
+            clinical, financial, and visual. This page replaces a resume layout with
+            a plain-language tour of the work: problem, approach, and result.
+          </p>
+        </div>
+        <aside class="hero-meta">
+          <p>
+            <strong>Focus</strong>
+            Healthcare AI, quantitative pipelines, computer vision, and agent tooling
+          </p>
+          <p>
+            <strong>Stack</strong>
+            Python, PyTorch, FastAPI, React, PostgreSQL, Docker
+          </p>
+          <p>
+            <strong>Site</strong>
+            ahlako.me · ark0723.github.io
+          </p>
+        </aside>
+      </section>
 
-{% include career-profile.html %}
+      <div class="wrap">
+        <div class="filters" role="tablist" aria-label="Filter projects">
+          <button class="filter is-active" data-filter="all">All</button>
+          <button class="filter" data-filter="healthcare">Healthcare</button>
+          <button class="filter" data-filter="finance">Finance</button>
+          <button class="filter" data-filter="vision">Computer vision</button>
+          <button class="filter" data-filter="deeplearning">Deep learning</button>
+          <button class="filter" data-filter="systems">Systems &amp; agents</button>
+        </div>
+      </div>
 
-{% unless site.data.data.sidebar.education %}
-  {% include education.html %}
-{% endunless %}
+      <section id="projects" class="wrap list">
+        <article class="project" data-tags="finance,systems">
+          <div class="project-top">
+            <div>
+              <div class="badge-row">
+                <span class="badge">Quantitative finance</span>
+                <span class="badge private">Private repository</span>
+              </div>
+              <h2>Signal Matrix</h2>
+              <p class="pitch">
+                A production screening pipeline that scores 500+ S&amp;P 500 names
+                each day from technical, momentum, fundamental, and macroeconomic
+                signals — then ships the results through an authenticated API and
+                Telegram alerts.
+              </p>
+            </div>
+            <span class="idx">01</span>
+          </div>
+          <div class="facts">
+            <div>
+              <h3>Problem</h3>
+              <p>
+                Daily equity research does not scale in spreadsheets. Signals drift,
+                reruns are hard to reproduce, and there is no clean way to notify a
+                researcher when the tape changes.
+              </p>
+            </div>
+            <div>
+              <h3>Approach</h3>
+              <p>
+                FastAPI + PostgreSQL backend, vectorbt signal computation, Plotly
+                charts, Clerk auth, GitHub Actions for scheduled jobs, and a Telegram
+                bot for push notifications.
+              </p>
+            </div>
+            <div>
+              <h3>Result</h3>
+              <p>
+                An automated research loop: ingest, score, rank, and alert — without
+                a manual morning screen of the whole index.
+              </p>
+            </div>
+          </div>
+          <div class="tags">
+            <span>PostgreSQL</span><span>FastAPI</span><span>vectorbt</span>
+            <span>GitHub Actions</span><span>Pandas</span><span>Plotly</span>
+            <span>Clerk</span><span>Telegram</span>
+          </div>
+          <div class="links">
+            <a href="https://github.com/ark0723/signal-matrix">GitHub</a>
+          </div>
+        </article>
 
-{% include experiences.html %}
+        <article class="project" data-tags="healthcare,systems">
+          <div class="project-top">
+            <div>
+              <div class="badge-row">
+                <span class="badge">Healthcare AI</span>
+              </div>
+              <h2>Clinical Trial Navigator</h2>
+              <p class="pitch">
+                An evidence-grounded assistant that helps cancer patients discover,
+                understand, and monitor trials — US market, starting with
+                HER2-positive breast cancer. It suggests possibly relevant studies
+                and questions for a clinician; it does not make treatment decisions.
+              </p>
+            </div>
+            <span class="idx">02</span>
+          </div>
+          <div class="facts">
+            <div>
+              <h3>Problem</h3>
+              <p>
+                Trial search is fragmented. Patients cannot easily see why a study
+                might fit, how far the nearest site is, or what to confirm with a
+                doctor.
+              </p>
+            </div>
+            <div>
+              <h3>Approach</h3>
+              <p>
+                ClinicalTrials.gov sync, encrypted profiles, rule-based matching with
+                travel-distance hard filters, and a React/TypeScript UI over FastAPI
+                + SQLAlchemy. Frontend on Vercel, API on Fly.io, database on Neon.
+              </p>
+            </div>
+            <div>
+              <h3>Result</h3>
+              <p>
+                Ranked matches with compatibility reasons, inclusion criteria, and
+                nearest-site mileage. Matching sits behind a strategy interface so
+                scoring can later swap to an ML model.
+              </p>
+            </div>
+          </div>
+          <div class="tags">
+            <span>FastAPI</span><span>SQLAlchemy</span><span>React</span>
+            <span>TypeScript</span><span>PostgreSQL</span><span>Vercel</span>
+            <span>Fly.io</span><span>Neon</span>
+          </div>
+          <div class="links">
+            <a href="https://github.com/ark0723/clinical_trials_tracker">GitHub</a>
+            <a href="https://clinical-trial-navigator-one.vercel.app">Live app</a>
+          </div>
+        </article>
 
-{% include certifications.html %}
+        <article class="project" data-tags="healthcare,deeplearning">
+          <div class="project-top">
+            <div>
+              <div class="badge-row">
+                <span class="badge">Healthcare · RL</span>
+                <span class="badge private">Private repository</span>
+              </div>
+              <h2>Preventive Breast Cancer Decision Support</h2>
+              <p class="pitch">
+                A reinforcement-learning clinical decision support system that
+                personalizes prevention for high-risk patients (BRCA1/2, PALB2) by
+                choosing both the intervention — surgery vs. surveillance — and its
+                timing over a 45-year horizon.
+              </p>
+            </div>
+            <span class="idx">03</span>
+          </div>
+          <div class="facts">
+            <div>
+              <h3>Problem</h3>
+              <p>
+                Guideline-based prevention ignores individual preferences and the
+                long-run trade-off between treatment aggressiveness and quality of
+                life.
+              </p>
+            </div>
+            <div>
+              <h3>Approach</h3>
+              <p>
+                End-to-end MDP / deep RL (PPO, Gymnasium), Pareto analysis of
+                aggressiveness vs. utility, and SHAP explanations for menopausal
+                status, breast density, and patient preferences.
+              </p>
+            </div>
+            <div>
+              <h3>Result</h3>
+              <p>
+                Personalized policies that outperform standard guidelines by up to
+                4.33 quality-adjusted life years (QALYs), with drivers a clinician
+                can inspect.
+              </p>
+            </div>
+          </div>
+          <div class="tags">
+            <span>Python</span><span>PyTorch</span><span>PPO</span>
+            <span>Gymnasium</span><span>SHAP</span><span>MDP</span>
+          </div>
+          <div class="links">
+            <a href="https://github.com/ark0723/preventive_BC">GitHub</a>
+          </div>
+        </article>
 
-{% include projects.html %}
+        <article class="project" data-tags="vision,systems">
+          <div class="project-top">
+            <div>
+              <div class="badge-row">
+                <span class="badge">Computer vision</span>
+              </div>
+              <h2>Real-time Anomaly Detection</h2>
+              <p class="pitch">
+                A local FastAPI service that classifies video frames as normal or
+                anomalous. The model was trained and tracked on Azure Databricks with
+                MLflow, then moved off the cloud so inference has no ongoing bill.
+              </p>
+            </div>
+            <span class="idx">04</span>
+          </div>
+          <div class="facts">
+            <div>
+              <h3>Problem</h3>
+              <p>
+                The Databricks workspace was deleted. The model still needed a
+                reproducible local path: download once, serve predictions, inspect
+                results in a browser.
+              </p>
+            </div>
+            <div>
+              <h3>Approach</h3>
+              <p>
+                Export the MLflow Transformers pipeline, serve batch base64 images
+                from FastAPI, and wrap a Streamlit drag-and-drop UI. Salt-and-pepper
+                noise experiments test robustness.
+              </p>
+            </div>
+            <div>
+              <h3>Result</h3>
+              <p>
+                CPU inference with color-coded confidence, a public results page, and
+                zero cloud cost after the one-time model download.
+              </p>
+            </div>
+          </div>
+          <div class="gallery">
+            <figure>
+              <img
+                src="https://raw.githubusercontent.com/ark0723/anomaly_detection/04f089b6805a52ae7a5866119c7d2aca2167f030/assets/prediction_results.png"
+                alt="Anomaly detection predictions with green normal and red anomalous frames"
+                loading="lazy"
+              />
+              <figcaption>Normal vs. anomalous frames with scores</figcaption>
+            </figure>
+          </div>
+          <div class="tags">
+            <span>FastAPI</span><span>MLflow</span><span>Azure Databricks</span>
+            <span>Streamlit</span><span>PyTorch</span><span>Transformers</span>
+          </div>
+          <div class="links">
+            <a href="https://github.com/ark0723/anomaly_detection">GitHub</a>
+            <a href="https://ark0723.github.io/anomaly_detection/">Results page</a>
+            <a
+              href="https://github.com/ark0723/anomaly_detection/releases/latest/download/demo_video.mp4"
+              >Demo video</a
+            >
+          </div>
+        </article>
 
-{% include oss-contributions.html %}
+        <article class="project" data-tags="vision,deeplearning">
+          <div class="project-top">
+            <div>
+              <div class="badge-row">
+                <span class="badge">Computer vision · Deep learning</span>
+              </div>
+              <h2>Neural Style Transfer</h2>
+              <p class="pitch">
+                A from-scratch PyTorch implementation of Gatys et al. (CVPR 2016):
+                keep the content of one image, paint it in the texture of another,
+                and compare Adam vs. L-BFGS on the same VGG19 features.
+              </p>
+            </div>
+            <span class="idx">05</span>
+          </div>
+          <div class="facts">
+            <div>
+              <h3>Problem</h3>
+              <p>
+                Style transfer is often a black-box demo. I wanted the losses,
+                Gram matrices, and optimizer behavior to be inspectable — including
+                how fast each optimizer actually converges.
+              </p>
+            </div>
+            <div>
+              <h3>Approach</h3>
+              <p>
+                VGG19 features (content at conv4_2, style at conv1_1–conv5_1), MSE
+                on Gram matrices, 512px inputs, and intermediate snapshots every 50
+                epochs. Trained on a Colab T4.
+              </p>
+            </div>
+            <div>
+              <h3>Result</h3>
+              <p>
+                L-BFGS reaches a usable transfer in about 50 epochs; Adam needs
+                closer to 300. Final quality is similar; L-BFGS is roughly 6× fewer
+                iterations, at a higher cost per step.
+              </p>
+            </div>
+          </div>
+          <div class="gallery">
+            <figure>
+              <img
+                src="https://raw.githubusercontent.com/ark0723/neural-style-transfer/5dbdb1aee99af953ebfcea2b80c8b10075f7fc8d/data/content.jpg"
+                alt="Content photograph used as the structure source"
+                loading="lazy"
+              />
+              <figcaption>Content</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="https://raw.githubusercontent.com/ark0723/neural-style-transfer/5dbdb1aee99af953ebfcea2b80c8b10075f7fc8d/data/style2.jpg"
+                alt="Style reference painting"
+                loading="lazy"
+              />
+              <figcaption>Style</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="https://raw.githubusercontent.com/ark0723/neural-style-transfer/5dbdb1aee99af953ebfcea2b80c8b10075f7fc8d/result/adam_1e6_0.1/output_epoch_1000.png"
+                alt="Style transfer result after 1000 Adam epochs"
+                loading="lazy"
+              />
+              <figcaption>Adam · epoch 1000</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="https://raw.githubusercontent.com/ark0723/neural-style-transfer/5dbdb1aee99af953ebfcea2b80c8b10075f7fc8d/result/lgbfg_1e6_1/output_epoch_50.png"
+                alt="Style transfer result after 50 L-BFGS epochs"
+                loading="lazy"
+              />
+              <figcaption>L-BFGS · epoch 50</figcaption>
+            </figure>
+          </div>
+          <div class="tags">
+            <span>PyTorch</span><span>VGG19</span><span>Gram matrix</span>
+            <span>Adam</span><span>L-BFGS</span>
+          </div>
+          <div class="links">
+            <a href="https://github.com/ark0723/neural-style-transfer">GitHub</a>
+          </div>
+        </article>
 
-{% include publications.html %}
+        <article class="project" data-tags="deeplearning">
+          <div class="project-top">
+            <div>
+              <div class="badge-row">
+                <span class="badge">Deep learning · NLP</span>
+              </div>
+              <h2>Transformer from Scratch</h2>
+              <p class="pitch">
+                An encoder–decoder Transformer written in PyTorch — tokenizer,
+                attention layers, padding masks, training, and greedy decoding —
+                trained on a small Korean→English corpus so every moving part stays
+                visible.
+              </p>
+            </div>
+            <span class="idx">06</span>
+          </div>
+          <div class="facts">
+            <div>
+              <h3>Problem</h3>
+              <p>
+                High-level libraries hide the mechanics that matter when you need to
+                reason about masks, special tokens, and generation.
+              </p>
+            </div>
+            <div>
+              <h3>Approach</h3>
+              <p>
+                Custom vocabulary + tokenizer, multi-head attention, encoder/decoder
+                stacks with pre-norm and post-norm, cross-entropy that ignores
+                padding, and greedy decode from <code>&lt;sos&gt;</code> to
+                <code>&lt;eos&gt;</code>. Runs on MPS, CUDA, or CPU.
+              </p>
+            </div>
+            <div>
+              <h3>Result</h3>
+              <p>
+                A compact, readable seq2seq model that trains in minutes on toy
+                KR→EN pairs and prints a translation at inference time.
+              </p>
+            </div>
+          </div>
+          <div class="tags">
+            <span>PyTorch</span><span>Attention</span><span>Tokenizer</span>
+            <span>Seq2seq</span><span>Greedy decoding</span>
+          </div>
+          <div class="links">
+            <a href="https://github.com/ark0723/transformer_from_scratch">GitHub</a>
+          </div>
+        </article>
 
-{% include recommendations.html %}
+        <article class="project" data-tags="systems">
+          <div class="project-top">
+            <div>
+              <div class="badge-row">
+                <span class="badge">Backend systems</span>
+              </div>
+              <h2>AI Custom Apparel Backend</h2>
+              <p class="pitch">
+                Microservices for an MVP that turns user keywords into AI-generated
+                t-shirt art, then carries the order through admin, object storage,
+                and payment — FastAPI for generation, Django for operations, Nginx
+                as the gateway.
+              </p>
+            </div>
+            <span class="idx">07</span>
+          </div>
+          <div class="facts">
+            <div>
+              <h3>Problem</h3>
+              <p>
+                Image generation, order state, and an admin UI have different
+                lifecycles. One process trying to do all three becomes hard to
+                deploy and harder to scale.
+              </p>
+            </div>
+            <div>
+              <h3>Approach</h3>
+              <p>
+                Docker Compose services: Nginx routes traffic, Django owns users and
+                orders on PostgreSQL, FastAPI talks to external image APIs, JWT
+                authenticates clients, and AWS S3 stores generated art.
+              </p>
+            </div>
+            <div>
+              <h3>Result</h3>
+              <p>
+                A containerized backend with an admin panel, OpenAPI docs, and a
+                path from prompt → image → order without coupling the AI path to the
+                CMS.
+              </p>
+            </div>
+          </div>
+          <div class="tags">
+            <span>FastAPI</span><span>Django</span><span>Docker</span>
+            <span>Nginx</span><span>JWT</span><span>AWS S3</span>
+            <span>PostgreSQL</span><span>Prompting</span>
+          </div>
+          <div class="links">
+            <a href="https://github.com/ark0723/aif_deployment">GitHub</a>
+          </div>
+        </article>
 
-{% include skills.html %}
+        <article class="project" data-tags="vision,healthcare,deeplearning">
+          <div class="project-top">
+            <div>
+              <div class="badge-row">
+                <span class="badge">Computer vision · Healthcare</span>
+              </div>
+              <h2>Medical OpenPose</h2>
+              <p class="pitch">
+                A pose-estimation pipeline that extracts 25+ anatomical landmarks
+                from patient video so rehabilitation progress can be measured, not
+                only observed — trained from MSCOCO and applied to clinical footage.
+              </p>
+            </div>
+            <span class="idx">08</span>
+          </div>
+          <div class="facts">
+            <div>
+              <h3>Problem</h3>
+              <p>
+                Gait, range of motion, and post-surgical recovery are often scored
+                by eye. That is slow and hard to compare across visits.
+              </p>
+            </div>
+            <div>
+              <h3>Approach</h3>
+              <p>
+                PyTorch OpenPose on CUDA: MSCOCO prep, GPU training notebooks,
+                TensorBoard monitoring, and a patient-specific inference notebook
+                that maps keypoints onto clinical video.
+              </p>
+            </div>
+            <div>
+              <h3>Result</h3>
+              <p>
+                Real-time GPU inference (30+ FPS) with major-joint detection above
+                95%, producing quantitative movement traces from raw video.
+              </p>
+            </div>
+          </div>
+          <div class="gallery">
+            <figure>
+              <img
+                src="https://raw.githubusercontent.com/ark0723/MyProject/9e6411b0421496bae13d8b7289794afb74c4eab9/OpenPose/result.png"
+                alt="Skeletal keypoints overlaid on a person in a clinical pose-estimation result"
+                loading="lazy"
+              />
+              <figcaption>Keypoint overlay on patient imagery</figcaption>
+            </figure>
+          </div>
+          <div class="tags">
+            <span>PyTorch</span><span>OpenPose</span><span>MSCOCO</span>
+            <span>CUDA</span><span>TensorBoard</span><span>Jupyter</span>
+          </div>
+          <div class="links">
+            <a href="https://github.com/ark0723/MyProject/tree/master/OpenPose"
+              >GitHub</a
+            >
+          </div>
+        </article>
+
+        <article class="project" data-tags="systems,finance">
+          <div class="project-top">
+            <div>
+              <div class="badge-row">
+                <span class="badge">Agents · MCP</span>
+              </div>
+              <h2>Binance MCP Server</h2>
+              <p class="pitch">
+                A Model Context Protocol server that turns Binance market data into
+                tools an AI agent can call. Implemented in Python (FastMCP) and
+                TypeScript, with STDIO and HTTP transports, plus a LangGraph client
+                that asks Gemini for live prices through those tools.
+              </p>
+            </div>
+            <span class="idx">09</span>
+          </div>
+          <div class="facts">
+            <div>
+              <h3>Problem</h3>
+              <p>
+                LLMs do not have a live tape. Agents need a small, inspectable
+                interface for current price, 24-hour change, and rolling windows —
+                without baking exchange HTTP calls into every prompt.
+              </p>
+            </div>
+            <div>
+              <h3>Approach</h3>
+              <p>
+                FastMCP tools (<code>get_price</code>,
+                <code>get_price_24hr_change</code>,
+                <code>get_rolling_windows_price</code>), in-memory activity logs,
+                symbol aliases (btc → BTCUSDT), a TypeScript SDK server, and a
+                LangGraph ReAct agent over STDIO.
+              </p>
+            </div>
+            <div>
+              <h3>Result</h3>
+              <p>
+                The same market tools work from Claude Desktop, HTTP clients, and a
+                LangGraph agent. No local files, so the HTTP server can run in a
+                container.
+              </p>
+            </div>
+          </div>
+          <div class="tags">
+            <span>FastMCP</span><span>MCP</span><span>TypeScript</span>
+            <span>LangGraph</span><span>Binance API</span><span>STDIO / HTTP</span>
+          </div>
+          <div class="links">
+            <a href="https://github.com/ark0723/mcp_from_scratch">GitHub</a>
+          </div>
+        </article>
+      </section>
+      <p class="wrap empty" id="empty">No projects in this category.</p>
+    </main>
+
+    <footer class="wrap">
+      <span>Ahla Ko · selected projects</span>
+      <span>Content in English · source on GitHub Pages</span>
+    </footer>
+
+    <script>
+      const buttons = document.querySelectorAll(".filter");
+      const cards = document.querySelectorAll(".project");
+      const empty = document.getElementById("empty");
+
+      buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const filter = button.dataset.filter;
+          buttons.forEach((item) => item.classList.toggle("is-active", item === button));
+          let visible = 0;
+          cards.forEach((card) => {
+            const tags = card.dataset.tags.split(",");
+            const show = filter === "all" || tags.includes(filter);
+            card.hidden = !show;
+            if (show) visible += 1;
+          });
+          empty.classList.toggle("is-visible", visible === 0);
+        });
+      });
+    </script>
+  </body>
+</html>
