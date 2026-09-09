@@ -38,7 +38,12 @@
         <nav class="nav-links" aria-label="Profile links">
           <a href="https://github.com/ark0723">GitHub</a>
           <a href="https://www.linkedin.com/in/ahlako">LinkedIn</a>
-          <a href="mailto:ark0723@gmail.com">Email</a>
+          <a
+            class="email-link"
+            href="mailto:ark0723@gmail.com"
+            data-email="ark0723@gmail.com"
+            >Email</a
+          >
         </nav>
       </div>
     </header>
@@ -284,14 +289,17 @@
           </div>
           <div class="gallery gallery--scroll">
             <figure>
-              <div class="shot" tabindex="0" role="region" aria-label="Scrollable anomaly detection result">
-                <img
-                  src="https://raw.githubusercontent.com/ark0723/anomaly_detection/04f089b6805a52ae7a5866119c7d2aca2167f030/assets/prediction_results.png"
-                  alt="Anomaly detection predictions with green normal and red anomalous frames"
-                  loading="lazy"
-                />
+              <div class="shot-wrap">
+                <div class="shot" tabindex="0" role="region" aria-label="Scrollable anomaly detection result">
+                  <img
+                    src="https://raw.githubusercontent.com/ark0723/anomaly_detection/04f089b6805a52ae7a5866119c7d2aca2167f030/assets/prediction_results.png"
+                    alt="Anomaly detection predictions with green normal and red anomalous frames"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="scroll-bar" aria-hidden="true"><div class="scroll-thumb"></div></div>
               </div>
-              <figcaption>Normal vs. anomalous frames with scores — scroll inside the frame to see the full image</figcaption>
+              <figcaption>Normal vs. anomalous frames with scores — use the bar on the right to scroll the full image</figcaption>
             </figure>
           </div>
           <div class="tags">
@@ -535,14 +543,17 @@
           </div>
           <div class="gallery gallery--scroll">
             <figure>
-              <div class="shot" tabindex="0" role="region" aria-label="Scrollable OpenPose result">
-                <img
-                  src="https://raw.githubusercontent.com/ark0723/MyProject/9e6411b0421496bae13d8b7289794afb74c4eab9/OpenPose/result.png"
-                  alt="Skeletal keypoints overlaid on a person in a clinical pose-estimation result"
-                  loading="lazy"
-                />
+              <div class="shot-wrap">
+                <div class="shot" tabindex="0" role="region" aria-label="Scrollable OpenPose result">
+                  <img
+                    src="https://raw.githubusercontent.com/ark0723/MyProject/9e6411b0421496bae13d8b7289794afb74c4eab9/OpenPose/result.png"
+                    alt="Skeletal keypoints overlaid on a person in a clinical pose-estimation result"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="scroll-bar" aria-hidden="true"><div class="scroll-thumb"></div></div>
               </div>
-              <figcaption>Keypoint overlay on patient imagery — scroll inside the frame to see the full image</figcaption>
+              <figcaption>Keypoint overlay on patient imagery — use the bar on the right to scroll the full image</figcaption>
             </figure>
           </div>
           <div class="tags">
@@ -616,11 +627,14 @@
       <span>Ahla Ko · selected projects</span>
       <span>Content in English · source on GitHub Pages</span>
     </footer>
+    <div class="toast" id="copy-toast" hidden>Copied ark0723@gmail.com</div>
 
     <script>
       const buttons = document.querySelectorAll(".filter");
       const cards = document.querySelectorAll(".project");
       const empty = document.getElementById("empty");
+      const emailLink = document.querySelector(".email-link");
+      const toast = document.getElementById("copy-toast");
 
       buttons.forEach((button) => {
         button.addEventListener("click", () => {
@@ -635,6 +649,59 @@
           });
           empty.classList.toggle("is-visible", visible === 0);
         });
+      });
+
+      emailLink.addEventListener("click", (event) => {
+        event.preventDefault();
+        const email = emailLink.dataset.email;
+        toast.hidden = false;
+        toast.textContent = email;
+        const copy = navigator.clipboard && navigator.clipboard.writeText(email);
+        if (copy) {
+          copy
+            .then(() => {
+              toast.textContent = `Copied ${email}`;
+            })
+            .catch(() => {
+              toast.textContent = email;
+            });
+        }
+        clearTimeout(toast._hide);
+        toast._hide = setTimeout(() => {
+          toast.hidden = true;
+        }, 2500);
+      });
+
+      document.querySelectorAll(".gallery--scroll .shot-wrap").forEach((wrap) => {
+        const shot = wrap.querySelector(".shot");
+        const bar = wrap.querySelector(".scroll-bar");
+        const thumb = wrap.querySelector(".scroll-thumb");
+        const img = shot.querySelector("img");
+
+        const sync = () => {
+          const view = shot.clientHeight;
+          const full = shot.scrollHeight;
+          if (full <= view) {
+            thumb.style.height = "100%";
+            thumb.style.transform = "translateY(0)";
+            return;
+          }
+          const thumbHeight = Math.max(48, (view / full) * view);
+          const maxTop = view - thumbHeight;
+          const progress = shot.scrollTop / (full - view);
+          thumb.style.height = `${thumbHeight}px`;
+          thumb.style.transform = `translateY(${progress * maxTop}px)`;
+        };
+
+        shot.addEventListener("scroll", sync, { passive: true });
+        img.addEventListener("load", sync);
+        window.addEventListener("resize", sync);
+        bar.addEventListener("click", (event) => {
+          const rect = bar.getBoundingClientRect();
+          const ratio = (event.clientY - rect.top) / rect.height;
+          shot.scrollTop = ratio * (shot.scrollHeight - shot.clientHeight);
+        });
+        sync();
       });
     </script>
   </body>
