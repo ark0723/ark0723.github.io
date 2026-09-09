@@ -86,15 +86,14 @@
           <div class="project-top">
             <div>
               <div class="badge-row">
-                <span class="badge">Quantitative finance</span>
+                <span class="badge">Swing trading</span>
                 <span class="badge private">Private repository</span>
               </div>
               <h2>Signal Matrix</h2>
               <p class="pitch">
-                A production screening pipeline that scores 500+ S&amp;P 500 names
-                each day from technical, momentum, fundamental, and macroeconomic
-                signals — then ships the results through an authenticated API and
-                Telegram alerts.
+                A daily swing-trading screener for S&amp;P 500 names: it looks for
+                pullbacks inside long-term uptrends, then publishes a public preview
+                and a member dashboard for the full candidate list.
               </p>
             </div>
             <span class="idx">01</span>
@@ -103,34 +102,38 @@
             <div>
               <h3>Problem</h3>
               <p>
-                Daily equity research does not scale in spreadsheets. Signals drift,
-                reruns are hard to reproduce, and there is no clean way to notify a
-                researcher when the tape changes.
+                Scanning hundreds of names by hand for a swing setup — liquid,
+                still in an uptrend, pulled back, RSI in a bounce zone — does not
+                survive a daily close.
               </p>
             </div>
             <div>
               <h3>Approach</h3>
               <p>
-                FastAPI + PostgreSQL backend, vectorbt signal computation, Plotly
-                charts, Clerk auth, GitHub Actions for scheduled jobs, and a Telegram
-                bot for push notifications.
+                After the U.S. close, GitHub Actions runs layered filters: $10–$150,
+                1M+ volume, above MA240, below MA20, RSI 30–40. FastAPI + Next.js
+                serve a public preview; a Vercel member app (Stripe test mode) is
+                meant to unlock the rest.
               </p>
             </div>
             <div>
               <h3>Result</h3>
               <p>
-                An automated research loop: ingest, score, rank, and alert — without
-                a manual morning screen of the whole index.
+                A live catalog of today’s swing candidates plus a forward track
+                record. The public demo shows a subset; the member site is still
+                being built.
               </p>
             </div>
           </div>
           <div class="tags">
-            <span>PostgreSQL</span><span>FastAPI</span><span>vectorbt</span>
-            <span>GitHub Actions</span><span>Pandas</span><span>Plotly</span>
-            <span>Clerk</span><span>Telegram</span>
+            <span>Python</span><span>FastAPI</span><span>Next.js</span>
+            <span>yfinance</span><span>pandas-ta</span><span>GitHub Actions</span>
+            <span>Stripe</span><span>Vercel</span>
           </div>
           <div class="links">
             <a href="https://github.com/ark0723/signal-matrix">GitHub</a>
+            <a href="https://ahlako.me/signal-matrix/en/">Public demo</a>
+            <a href="https://signal-matrix-member.vercel.app/">Member app (in progress)</a>
           </div>
         </article>
 
