@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Regulatory Multi-Agent RAG System — Ahla Ko</title>
+    <meta
+      name="description"
+      content="Engineering overview and retrieval evaluation for a LangGraph-based FDA regulatory research MVP."
+    />
+    <meta property="og:title" content="Regulatory Multi-Agent RAG System — Ahla Ko" />
+    <meta
+      property="og:description"
+      content="A source-aware FDA research system with specialized agents, citation validation, and measured retrieval evaluation."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Source+Sans+3:wght@400;650;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/portfolio.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main-content">Skip to project details</a>
+    <header>
+      <div class="wrap nav">
+        <a class="brand" href="index.html#top">
+          <img src="assets/images/mypic.jpg" alt="Portrait of Ahla Ko" />
+          <div>
+            <strong>Ahla Ko</strong>
+            <span>Selected projects</span>
+          </div>
+        </a>
+        <nav class="nav-links" aria-label="Profile links">
+          <a href="index.html#projects">Projects</a>
+          <a href="https://github.com/ark0723">GitHub</a>
+          <a href="https://www.linkedin.com/in/ahlako">LinkedIn</a>
+          <a href="mailto:ark0723@gmail.com">Email</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" class="wrap detail-main">
+      <section class="hero detail-hero">
+        <div>
+          <p class="kicker">AI engineering · Research MVP</p>
+          <h1>Regulatory Multi-Agent RAG System</h1>
+          <p class="lede">
+            A source-aware FDA research assistant built to keep regulations,
+            guidance, and supplemental web evidence distinct while making
+            retrieval, citations, and review steps inspectable.
+          </p>
+        </div>
+        <aside class="hero-meta" aria-label="Project status">
+          <p>
+            <strong>Current state</strong>
+            Interactive Gradio MVP; no public demo is linked.
+          </p>
+          <p>
+            <strong>Core stack</strong>
+            Python · LangGraph · PostgreSQL/PGVector · Gradio
+          </p>
+          <p>
+            <strong>Project link</strong>
+            <a href="index.html#projects">Back to all projects</a>
+          </p>
+        </aside>
+      </section>
+
+      <div class="detail-sections">
+        <section class="detail-section" aria-labelledby="architecture-title">
+          <p class="kicker">Architecture</p>
+          <h2 id="architecture-title">Route by source, validate before review</h2>
+          <p>
+            A structured router dispatches to only the needed source specialists.
+            Regulation and guidance agents use the shared retrieval stack; web
+            research is supplemental. Their attributed evidence is synthesized
+            once, then citation-checked and evaluated.
+          </p>
+
+          <figure class="architecture" aria-labelledby="architecture-caption">
+            <figcaption id="architecture-caption">
+              Implemented LangGraph research and answer-review flow
+            </figcaption>
+            <ol class="architecture-flow">
+              <li>
+                <strong>Question</strong>
+                <span>Structured multi-label routing</span>
+              </li>
+            </ol>
+            <span class="architecture-arrow" aria-hidden="true">↓</span>
+            <div class="architecture-branches" aria-label="Selected research agents">
+              <article>
+                <h3>Regulation agent</h3>
+                <p>FDA CFR retrieval and section-aware evidence</p>
+              </article>
+              <article>
+                <h3>Guidance agent</h3>
+                <p>FDA guidance retrieval with source provenance</p>
+              </article>
+              <article>
+                <h3>Web research agent</h3>
+                <p>Supplemental search and extracted web evidence</p>
+              </article>
+            </div>
+            <span class="architecture-arrow" aria-hidden="true">↓</span>
+            <ol class="architecture-flow" start="2">
+              <li>
+                <strong>Merge evidence and synthesize</strong>
+                <span>Assign deterministic source IDs to the combined source catalog</span>
+              </li>
+              <li>
+                <strong>Validate citations</strong>
+                <span>Reject unsupported or malformed source references before publishing</span>
+              </li>
+              <li>
+                <strong>Evaluate the answer</strong>
+                <span>Apply structured review and deterministic retry policy</span>
+              </li>
+            </ol>
+            <ul class="architecture-outcomes" aria-label="Evaluation outcomes">
+              <li><strong>Pass:</strong> finish with the validated answer</li>
+              <li><strong>Revise or research:</strong> bounded retry, then revalidate</li>
+              <li><strong>Human review:</strong> checkpointed approval or feedback</li>
+            </ul>
+          </figure>
+        </section>
+
+        <section class="detail-section" aria-labelledby="retrieval-title">
+          <p class="kicker">Retrieval engineering</p>
+          <h2 id="retrieval-title">Preserve document structure and evidence scope</h2>
+          <div class="detail-columns">
+            <div>
+              <h3>Shared retrieval pipeline</h3>
+              <p>
+                PostgreSQL/PGVector supplies vector candidates. A BGE cross-encoder
+                (<code>BAAI/bge-reranker-v2-m3</code>) reranks them before
+                relevance-ordered, budgeted expansion to source sections or
+                paragraphs. The system tracks scope and completeness rather than
+                treating every chunk as a standalone answer.
+              </p>
+            </div>
+            <div>
+              <h3>Facet-aware selection</h3>
+              <p>
+                The optional P4-1 selector attributes candidates to facets in
+                structured questions and chooses supporting parent sections from
+                the existing candidate set. It is deterministic: it adds neither
+                another semantic search nor an LLM call. It remains opt-in; the
+                production default is unchanged.
+              </p>
+            </div>
+          </div>
+          <p>
+            The agent separates binding CFR requirements from nonbinding FDA
+            guidance and keeps web material supplemental. Final answer citations
+            are resolved against the merged evidence catalog, not accepted solely
+            because a model produced citation-shaped text.
+          </p>
+        </section>
+
+        <section class="detail-section" aria-labelledby="evaluation-title">
+          <p class="kicker">Measured outcome</p>
+          <h2 id="evaluation-title">Retrieval coverage improved without an answer-accuracy claim</h2>
+          <p>
+            The Phase 4 P4-1 report compares the baseline P4-0 with opt-in
+            facet-aware parent selection on 23 retrieval cases; only three cases
+            activated facet-aware selection.
+          </p>
+          <div class="metric-grid" aria-label="P4-0 to P4-1 retrieval evaluation">
+            <div>
+              <strong>1.000 → 1.000</strong>
+              <span>Candidate Recall@15</span>
+            </div>
+            <div>
+              <strong>0.928 → 1.000</strong>
+              <span>Final evidence coverage</span>
+            </div>
+            <div>
+              <strong>0.888 → 0.960</strong>
+              <span>Complete-scope coverage</span>
+            </div>
+            <div>
+              <strong>1,501 → 1,535 ms</strong>
+              <span>Median retrieval pipeline latency</span>
+            </div>
+            <div>
+              <strong>0</strong>
+              <span>Citation integrity failures in the report</span>
+            </div>
+          </div>
+          <p class="evaluation-note">
+            These are retrieval-evaluation results, not end-to-end answer accuracy.
+            The benchmark measures candidate, evidence, and scope coverage; it does
+            not establish how often generated answers are correct.
+          </p>
+        </section>
+
+        <section class="detail-section" aria-labelledby="application-title">
+          <p class="kicker">Application and next step</p>
+          <h2 id="application-title">Persistent review workflow, local MVP</h2>
+          <p>
+            The Gradio interface uses PostgreSQL-backed conversation records and
+            LangGraph checkpoints to restore conversations and human-review state.
+            Its current configuration is local-only, with public sharing disabled;
+            authentication and authorization are not implemented.
+          </p>
+          <p>
+            Future integration with the existing AI Clinical Trial Navigator is
+            planned, but has not yet been implemented.
+          </p>
+          <div class="tags" aria-label="Technologies">
+            <span>Python</span><span>LangGraph</span><span>LangChain</span>
+            <span>PostgreSQL</span><span>PGVector</span><span>BGE cross-encoder</span>
+            <span>Gradio</span><span>Unit tests</span>
+          </div>
+          <div class="links">
+            <a href="index.html#projects">Return to project catalog</a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="wrap">
+      <span>Ahla Ko · selected projects</span>
+      <span>Content in English · source on GitHub Pages</span>
+    </footer>
+  </body>
+</html>

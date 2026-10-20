@@ -8,13 +8,18 @@ This site replaced the previous resume theme. Each card explains a repository in
 
 1. Signal Matrix
 2. Clinical Trial Navigator
-3. Preventive Breast Cancer Decision Support
-4. Real-time Anomaly Detection
-5. Neural Style Transfer
-6. Transformer from Scratch
-7. AI Custom Apparel Backend
-8. Medical OpenPose
-9. Binance MCP Server
+3. Regulatory Multi-Agent RAG System
+4. Preventive Breast Cancer Decision Support
+5. Real-time Anomaly Detection
+6. Neural Style Transfer
+7. Transformer from Scratch
+8. AI Custom Apparel Backend
+9. Medical OpenPose
+10. Binance MCP Server
+
+The Regulatory Multi-Agent RAG project has a standalone
+[detail page](./regulatory-multi-agent-rag.html) with its implemented
+architecture and retrieval-only evaluation results.
 
 ## Local preview
 
