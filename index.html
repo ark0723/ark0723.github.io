@@ -6,7 +6,7 @@
     <title>Ahla Ko — Selected Projects</title>
     <meta
       name="description"
-      content="Selected machine learning and systems projects by Ahla Ko: healthcare decision support, quantitative screening, computer vision, and agent tooling."
+      content="Selected machine learning and systems projects by Ahla Ko: healthcare decision support, medical data privacy, quantitative screening, computer vision, and agent tooling."
     />
     <meta property="og:title" content="Ahla Ko — Selected Projects" />
     <meta
@@ -54,15 +54,17 @@
           <p class="kicker">Project catalog</p>
           <h1>What the repositories actually do.</h1>
           <p class="lede">
-            I build machine learning systems that turn messy data into decisions —
-            clinical, financial, and visual. This page replaces a resume layout with
-            a plain-language tour of the work: problem, approach, and result.
+            I build machine learning systems that turn messy data into clinical,
+            financial, and visual decisions — and privacy safeguards around those
+            workflows. This page replaces a resume layout with a plain-language
+            tour of the work: problem, approach, and result.
           </p>
         </div>
         <aside class="hero-meta">
           <p>
             <strong>Focus</strong>
-            Healthcare AI, quantitative pipelines, computer vision, and agent tooling
+            Healthcare AI, privacy engineering, quantitative pipelines, computer
+            vision, and agent tooling
           </p>
           <p>
             <strong>Stack</strong>
@@ -195,6 +197,57 @@
           </div>
         </article>
 
+        <article class="project" data-tags="healthcare,systems">
+          <div class="project-top">
+            <div>
+              <div class="badge-row">
+                <span class="badge">Healthcare · Privacy engineering</span>
+              </div>
+              <h2>Medical AI Privacy Gateway</h2>
+              <p class="pitch">
+                A DICOM privacy gateway prototype that checks chest X-rays before
+                they cross a trust boundary to an external AI system, combining
+                metadata de-identification with burned-in text detection.
+              </p>
+            </div>
+            <span class="idx">03</span>
+          </div>
+          <div class="facts">
+            <div>
+              <h3>Problem</h3>
+              <p>
+                Removing identifiers from DICOM headers is not enough when names
+                or other sensitive text may also be embedded in image pixels.
+              </p>
+            </div>
+            <div>
+              <h3>Approach</h3>
+              <p>
+                De-identify selected metadata and regenerate study, series, and
+                instance UIDs, then inspect pixels with a fixture detector or
+                optional Tesseract OCR. Direct identifiers are redacted; only
+                <code>PASS</code> reaches a simulated external client, while
+                <code>REVIEW</code> and <code>BLOCK</code> remain inside.
+              </p>
+            </div>
+            <div>
+              <h3>Result</h3>
+              <p>
+                An auditable release decision path evaluated with a 120-image
+                seeded phantom set, with OCR limitations documented. It is a
+                prototype, not a HIPAA compliance claim.
+              </p>
+            </div>
+          </div>
+          <div class="tags">
+            <span>Python</span><span>DICOM</span><span>pydicom</span>
+            <span>Tesseract OCR</span><span>pytest</span>
+          </div>
+          <div class="links">
+            <a href="https://github.com/ark0723/MedicalAI_Privacy_Gateway">GitHub</a>
+          </div>
+        </article>
+
         <article class="project" data-tags="healthcare,systems,deeplearning">
           <div class="project-top">
             <div>
@@ -208,7 +261,7 @@
                 validates citations before evaluation and review.
               </p>
             </div>
-            <span class="idx">03</span>
+            <span class="idx">04</span>
           </div>
           <div class="facts">
             <div>
@@ -258,7 +311,7 @@
                 timing over a 45-year horizon.
               </p>
             </div>
-            <span class="idx">04</span>
+            <span class="idx">05</span>
           </div>
           <div class="facts">
             <div>
@@ -308,7 +361,7 @@
                 MLflow, then moved off the cloud so inference has no ongoing bill.
               </p>
             </div>
-            <span class="idx">05</span>
+            <span class="idx">06</span>
           </div>
           <div class="facts">
             <div>
@@ -377,7 +430,7 @@
                 and compare Adam vs. L-BFGS on the same VGG19 features.
               </p>
             </div>
-            <span class="idx">06</span>
+            <span class="idx">07</span>
           </div>
           <div class="facts">
             <div>
@@ -462,7 +515,7 @@
                 visible.
               </p>
             </div>
-            <span class="idx">07</span>
+            <span class="idx">08</span>
           </div>
           <div class="facts">
             <div>
@@ -512,7 +565,7 @@
                 as the gateway.
               </p>
             </div>
-            <span class="idx">08</span>
+            <span class="idx">09</span>
           </div>
           <div class="facts">
             <div>
@@ -563,7 +616,7 @@
                 only observed — trained from MSCOCO and applied to clinical footage.
               </p>
             </div>
-            <span class="idx">09</span>
+            <span class="idx">10</span>
           </div>
           <div class="facts">
             <div>
@@ -629,7 +682,7 @@
                 that asks Gemini for live prices through those tools.
               </p>
             </div>
-            <span class="idx">10</span>
+            <span class="idx">11</span>
           </div>
           <div class="facts">
             <div>
