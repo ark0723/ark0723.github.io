@@ -24,6 +24,11 @@ architecture and retrieval-only evaluation results.
 
 ## Local preview
 
+The catalog’s **Save portfolio as PDF** button opens the browser print dialog.
+Choose **Save as PDF**, A4 portrait, default scale, and disable browser headers
+and footers. The print layout includes a cover and all 11 projects (one per
+page), regardless of the active category filter. Project links remain clickable.
+
 ```bash
 python3 -m http.server 4000
 ```

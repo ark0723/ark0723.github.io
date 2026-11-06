@@ -1,0 +1,75 @@
+@page {
+  size: A4 portrait;
+  margin: 15mm;
+}
+
+/* This sheet belongs only to the catalog; detail pages keep their own layout. */
+html { scroll-behavior: auto; }
+body {
+  background: white;
+  font-size: 11pt;
+  line-height: 1.45;
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+}
+.wrap { width: 100%; max-width: none; }
+.skip, .nav-links, .pdf-tools, .filters, footer, .toast, .empty,
+.empty.is-visible, .scroll-bar { display: none !important; }
+header {
+  position: static;
+  background: white;
+  backdrop-filter: none;
+}
+.nav { min-height: 22mm; padding: 0; align-items: center; }
+.brand { color: var(--ink); }
+.brand img { width: 14mm; height: 14mm; }
+.brand strong { font-size: 20pt; }
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12mm;
+  padding: 24mm 0 0;
+  align-items: start;
+}
+h1 { font-size: 34pt; }
+.lede { font-size: 13pt; max-width: none; }
+.hero-meta { box-shadow: none; gap: 6mm; padding: 7mm; }
+.hero-meta p { font-size: 11pt; }
+.hero-meta::after {
+  content: "Contact: ark0723@gmail.com · github.com/ark0723 · linkedin.com/in/ahlako";
+  font-size: 10pt;
+  overflow-wrap: anywhere;
+}
+.list { display: block; padding: 0; }
+.project, .project[hidden] {
+  display: grid !important;
+  break-before: page;
+  break-inside: avoid;
+  page-break-before: always;
+  page-break-inside: avoid;
+  align-content: start;
+  gap: 6mm;
+  padding: 7mm;
+  margin: 0;
+  box-shadow: none;
+  background: white;
+}
+.project-top { gap: 5mm; }
+h2 { font-size: 24pt; line-height: 1.15; }
+.pitch { font-size: 11pt; max-width: none; }
+.facts { grid-template-columns: 1fr; gap: 5mm; }
+.facts h3 { font-size: 8pt; margin-bottom: 2mm; }
+.facts p { font-size: 10.5pt; }
+.badge { font-size: 8pt; }
+.tags, .links { gap: 2mm 3mm; }
+.tags span { font-size: 8pt; padding: 1mm 2mm; }
+.links { font-size: 9pt; overflow-wrap: anywhere; }
+.links a { border: 0; text-decoration: underline; }
+.gallery { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 2mm; }
+.gallery img { height: 30mm; object-fit: contain; }
+.gallery--scroll { grid-template-columns: 1fr; }
+.gallery--scroll .shot-wrap { display: block; }
+.gallery--scroll .shot { max-height: none; overflow: visible; }
+.gallery--scroll img { width: 100%; height: 65mm; object-fit: contain; }
+.gallery figcaption { font-size: 8pt; padding: 2mm; }
+code { overflow-wrap: anywhere; }

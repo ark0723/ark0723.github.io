@@ -23,6 +23,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/portfolio.css" />
+    <link rel="stylesheet" href="assets/css/portfolio-print.css" media="print" />
   </head>
   <body>
     <a class="skip" href="#projects">Skip to projects</a>
@@ -76,6 +77,11 @@
           </p>
         </aside>
       </section>
+
+      <div class="wrap pdf-tools">
+        <button class="pdf-button" id="save-pdf" type="button" aria-describedby="pdf-help">Save portfolio as PDF</button>
+        <p id="pdf-help">Choose “Save as PDF” in the print dialog. Includes all 11 projects, one per page, plus a cover. For best results, use A4 portrait and turn off headers and footers.</p>
+      </div>
 
       <div class="wrap">
         <div class="filters" role="tablist" aria-label="Filter projects">
@@ -736,6 +742,20 @@
       const empty = document.getElementById("empty");
       const emailLink = document.querySelector(".email-link");
       const toast = document.getElementById("copy-toast");
+      const pdfButton = document.getElementById("save-pdf");
+
+      pdfButton.addEventListener("click", async () => {
+        pdfButton.disabled = true;
+        try {
+          await Promise.all([
+            document.fonts.ready,
+            ...Array.from(document.images, (img) => img.decode().catch(() => {})),
+          ]);
+          window.print();
+        } finally {
+          pdfButton.disabled = false;
+        }
+      });
 
       buttons.forEach((button) => {
         button.addEventListener("click", () => {
